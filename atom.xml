@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tianyang-ty.github.io</id>
     <title>Yang&apos;s blog</title>
-    <updated>2020-12-02T05:59:22.079Z</updated>
+    <updated>2020-12-02T07:14:25.600Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tianyang-ty.github.io"/>
     <link rel="self" href="https://tianyang-ty.github.io/atom.xml"/>
@@ -16,9 +16,9 @@
         <link href="https://tianyang-ty.github.io/post/vscode-python-dev/">
         </link>
         <updated>2020-11-24T09:18:13.000Z</updated>
-        <summary type="html"><![CDATA[<p>本文纪录电脑中基于 VSCode 进行 Python 开发环境的流程。初上手 Python 时，Pycharm 是一个非常便利的 IDE，随着使用频率的增加，愈发被 Pycharm 超慢的启动速度困扰，于是转入 VSCode。VSCode 定位是一个文本编辑器，并不是跟 Pycharm 一样的 IDE，得益于丰富的插件支持，可以自定义出一套满足自己需求的开发环境。</p>
+        <summary type="html"><![CDATA[<p>本文记录电脑中基于 VSCode 进行 Python 开发环境的流程。初上手 Python 时，Pycharm 是一个非常便利的 IDE，随着使用频率的增加，愈发被 Pycharm 超慢的启动速度困扰，于是转入 VSCode。VSCode 定位是一个文本编辑器，并不是跟 Pycharm 一样的 IDE，得益于丰富的插件支持，可以自定义出一套满足自己需求的开发环境。</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>本文纪录电脑中基于 VSCode 进行 Python 开发环境的流程。初上手 Python 时，Pycharm 是一个非常便利的 IDE，随着使用频率的增加，愈发被 Pycharm 超慢的启动速度困扰，于是转入 VSCode。VSCode 定位是一个文本编辑器，并不是跟 Pycharm 一样的 IDE，得益于丰富的插件支持，可以自定义出一套满足自己需求的开发环境。</p>
+        <content type="html"><![CDATA[<p>本文记录电脑中基于 VSCode 进行 Python 开发环境的流程。初上手 Python 时，Pycharm 是一个非常便利的 IDE，随着使用频率的增加，愈发被 Pycharm 超慢的启动速度困扰，于是转入 VSCode。VSCode 定位是一个文本编辑器，并不是跟 Pycharm 一样的 IDE，得益于丰富的插件支持，可以自定义出一套满足自己需求的开发环境。</p>
 ]]></content>
     </entry>
     <entry>

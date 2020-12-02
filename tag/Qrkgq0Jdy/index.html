@@ -1,178 +1,2040 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8" />
 
-<title>Software | Yang&#39;s blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="苟利国家生死以，岂因祸福避趋之🕶">
+<meta name="theme-color" content="#000">
+<title>Yang&#39;s blog</title>
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/TianYang-TY/TianYang-TY.github.io@master/favicon.ico?v=1606888759896">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TianYang-TY/TianYang-TY.github.io@master/media/css/pisces.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TianYang-TY/TianYang-TY.github.io@master/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
 
-<link rel="shortcut icon" href="https://tianyang-ty.github.io/favicon.ico?v=1606888514587">
+<link href="https://cdn.jsdelivr.net/gh/TianYang-TY/TianYang-TY.github.io@master/media/hljs/styles/default.css"
+  rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://tianyang-ty.github.io/styles/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TianYang-TY/TianYang-TY.github.io@master/styles/main.css">
 
-<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
-<!-- DEMO JS -->
-<!--<script src="media/scripts/index.js"></script>-->
+<script src="https://cdn.jsdelivr.net/gh/TianYang-TY/TianYang-TY.github.io@master/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N5GTFD0HD6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
 
-        gtag('js', new Date());
-        gtag('config', 'G-N5GTFD0HD6');
-    </script>
+
+
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?1022cf3fe58761cec94dcef11d2117db";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 
 
 </head>
+
 <body>
-<div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="/images/avatar.png" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            Yang&#39;s blog
-        </div>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="/" class="menu gt-a-link">
-                            首页
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/archives" class="menu gt-a-link">
-                            归档
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/tags" class="menu gt-a-link">
-                            标签
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/post/about" class="menu gt-a-link">
-                            关于
-                        </a>
-                    
-                </div>
-            
-        </div>
-        <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1606888514587" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
-                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
-            </form>
-        </div>
-    </div>
-</nav>
-
-        <div class="current-tag-container">
-            <h2 class="title gt-c-content-color-first">
-                #Software
-            </h2>
-        </div>
-        <div class="post-list-container">
-    <div class="post-inner">
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://tianyang-ty.github.io/post/apps-recommended/">
-                            <span class="post-title gt-c-content-color-first">装机用所有软件合集</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <p>下面的文章列出了电脑中必备的一些软件，标注了其官网或者可靠的下载方式</p>
-
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2019-06-16 ·
-                        </time>
-                        
-                            <a href="https://tianyang-ty.github.io/tag/Qrkgq0Jdy/" class="post-tag">
-                                # Software
-                            </a>
-                        
-                            <a href="https://tianyang-ty.github.io/tag/6KHiJEdvJL/" class="post-tag">
-                                # Windows
-                            </a>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        
-    </div>
-</div>
-        <div class="pagination-container">
+  <div class="head-top-line"></div>
+  <div class="header-box">
     
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>Yang&#39;s blog</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">苟利国家生死以</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友链
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
     
-</div>
+    <div
+      class="section-layout  pisces">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/TianYang-TY/TianYang-TY.github.io@master/images/avatar.png"/>
+    <p class="site-author-name">Yang Tian</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">8</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">9</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">9</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://tianyang-ty.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
 
-        <div class="site-footer gt-c-content-color-first">
-    <div class="slogan gt-c-content-color-first">苟利国家生死以，岂因祸福避趋之🕶</div>
-    <div class="social-container">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </div>
-    <div class="footer-info">
-        Copyright &copy; 2019-2020 Yang Tian. All rights reserved.
-    </div>
-    <div>
-        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
-                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://tianyang-ty.github.io/atom.xml" target="_blank">RSS</a></a>
-    </div>
-</div>
 
+
+</div>
+</div>
 <script>
-  hljs.initHighlightingOnLoad()
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box tag-line box-shadow-wrapper">
+          <section class="section tags-section posts-expand bg-color">
+            <div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
+          Software
+          <small class="language" data-lan="tag">标签</small>
+        </h2>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://tianyang-ty.github.io/post/apps-recommended/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              06-16
+              <small>装机用所有软件合集</small>
+            </h1>
+          </div>
+        </div>
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
+        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      Copyright &copy; 2019-2020 Yang Tian. All rights reserved.
+    </div>
+  </footer>
+  
+  
+  <div class="pisces back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener('scroll', function (e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+
+  let hasCacu = false;
+  window.onresize = function () {
+    calcuHeight();
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, transitionDir, {});
+          }
+        })
+        window.Velocity(viewport, openProp, {
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target", "_blank");
+      }
+    })
+  }
+
+  let faSearch = document.querySelector('#fa_search');
+  faSearch.addEventListener('click', function () {
+    document.querySelector('#search_mask').style = ''
+  })
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+  
+  // 离开当前页title变化
+  var leaveTitle = "";
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+
+</script>
+  </div>
+</body>
+
+<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/vscode-python-dev/"" data-c="
+          &lt;p&gt;本文纪录电脑中基于 VSCode 进行 Python 开发环境的流程。初上手 Python 时，Pycharm 是一个非常便利的 IDE，随着使用频率的增加，愈发被 Pycharm 超慢的启动速度困扰，于是转入 VSCode。VSCode 定位是一个文本编辑器，并不是跟 Pycharm 一样的 IDE，得益于丰富的插件支持，可以自定义出一套满足自己需求的开发环境。&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;h2 id=&#34;python-安装&#34;&gt;Python 安装&lt;/h2&gt;
+&lt;p&gt;安装 Python 有两种途径，一种是去 Python 官网下载单独的 Python 安装包，另一种是使用 Anaconda 包管理器。目前使用的是 Anaconda 方法，在安装的同时也会附带更多的常用库，免得自己再逐个安装，并外还能够很方便的生成不同的虚拟环境，以应对不同的开发需求。如果只需要虚拟环境，不需要那么多的库，可以使用 miniconda。&lt;/p&gt;
+&lt;p&gt;Anconda 的安装包可以从清华大学的镜像中下载，安装时需要注意设定到环境变量，否则 VSCode 中的终端无法执行 Python 程序。安装之后需要设定 conda 和 pip 的国内镜像源，提升下载速度，方法如下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;清华 Anaconda 镜像帮助连接： &lt;a href=&#34;https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/&#34;&gt;https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;各系统都可以通过修改用户目录下的 .condarc 文件。Windows 用户无法直接创建名为 .condarc 的文件，可先执行 conda config --set show_channel_urls yes 生成该文件之后再修改。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;channels:
+  - defaults
+show_channel_urls: true
+channel_alias: https://mirrors.tuna.tsinghua.edu.cn/anaconda
+default_channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
+custom_channels:
+  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;# 设置 pip 的源
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;vscode-安装&#34;&gt;VSCode 安装&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;VSCode&lt;/a&gt; 是一个全平台通用的文本编辑器，在官网下载安装即可。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/TianYang-TY/myPic/20201124145300.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;插件安装&#34;&gt;插件安装&lt;/h2&gt;
+&lt;h3 id=&#34;chinese-simplified-language-pack-for-visual-studio-code-中文语言包&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans&#34;&gt;Chinese (Simplified) Language Pack for Visual Studio Code / 中文语言包&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;将软件的语言设置为中文。&lt;/p&gt;
+&lt;h3 id=&#34;python&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.python&#34;&gt;Python&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;VSCode 的 Python 扩展，使 VSCode 拥有调用 Python 解释器的功能。安装成功之后可以新建一个 &lt;code&gt;.py&lt;/code&gt; 文件，然后在窗口的左下角选择 Python 解释器，VSCode 会自动搜索系统中的 Python 环境。然后可以 &lt;code&gt;print(&#39;hello world&#39;)&lt;/code&gt; 检查一下是否有问题。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/TianYang-TY/myPic/20201124165038.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;bracket-pair-colorizer-2-彩色括号&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2&#34;&gt;Bracket Pair Colorizer 2 / 彩色括号&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;将不同的括号用不同的颜色标识，方便区分。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/TianYang-TY/myPic/20201124164614.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;dracula-official-主题&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula&#34;&gt;Dracula Official / 主题&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;VSCode 支持设置各种各样的主题，在扩展库搜索 &lt;code&gt;Theme&lt;/code&gt; 即可出现所有可用主题。&lt;/p&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/TianYang-TY/myPic/20201124164044.png&#34; style=&#34;zoom: 67%;&#34; /&gt;
+&lt;h3 id=&#34;material-icon-theme-图标主题&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme&#34;&gt;Material Icon Theme / 图标主题&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;扁平化图标主题，颜值才是第一生产力。&lt;/p&gt;
+&lt;h3 id=&#34;jupyter&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter&#34;&gt;Jupyter&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;VSCode 现在已经支持了 Jupyter Notebook，装个插件就可以了。&lt;/p&gt;
+&lt;h3 id=&#34;remote-ssh-远程开发&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh&#34;&gt;Remote-SSH / 远程开发&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;可以让通过SSH连接远程服务器作为本地的开发环境，连接远程服务器最好使用 SSH key，不建议使用密码，否则会不停地在输入密码。&lt;/p&gt;
+&lt;h2 id=&#34;settingsjson-设置&#34;&gt;settings.json / 设置&lt;/h2&gt;
+&lt;p&gt;VSCode 的 GUI 设置并不完善，更多还是直接操作 &lt;code&gt;settings.json&lt;/code&gt; ， &lt;code&gt;Ctrl+Shift+P&lt;/code&gt; 可以搜索 &lt;code&gt;settings.json&lt;/code&gt;  打开，前面设置的主题、图标等都会在这里看到，另外还可以在这里设置字体等格式。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;&amp;quot;workbench.iconTheme&amp;quot;: &amp;quot;material-icon-theme&amp;quot;,
+&amp;quot;workbench.colorTheme&amp;quot;: &amp;quot;Dracula&amp;quot;,
+&amp;quot;editor.fontSize&amp;quot;: 18,
+&amp;quot;editor.lineHeight&amp;quot;: 26,
+&amp;quot;editor.fontFamily&amp;quot;: &amp;quot;Sarasa mono SC&amp;quot;,
+&amp;quot;terminal.integrated.fontSize&amp;quot;: 16,
+&amp;quot;terminal.integrated.lineHeight&amp;quot;: 1.5,
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;自动补全与格式&#34;&gt;自动补全与格式&lt;/h2&gt;
+&lt;h3 id=&#34;pylance&#34;&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance&#34;&gt;Pylance&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Pylance 是微软新推出的 Python 语言服务器， 可以在插件库中安装，提供自动补全等功能。&lt;/p&gt;
+&lt;h3 id=&#34;yapf-代码格式化&#34;&gt;yapf / 代码格式化&lt;/h3&gt;
+&lt;p&gt;YAPF 是Google开源的一个用来格式化Python代码的工具，使用 &lt;code&gt;pip install yapf&lt;/code&gt; 进行安装，首次在 VSCode 中按下快捷键 &lt;code&gt;Shift+Alt+F&lt;/code&gt; 会弹窗选择格式化工具，之后可直接使用快捷键进行代码格式化，主要是注意代码缩进与 import 语句顺序等问题。&lt;/p&gt;
+&lt;h3 id=&#34;flake8-语法检查&#34;&gt;flake8 / 语法检查&lt;/h3&gt;
+&lt;p&gt;语法检查工具有很多，包括 flake8，pylint 等，同样使用 &lt;code&gt;pip install flake8&lt;/code&gt; 进行安装。默认的语法要求太过严格，可以在 &lt;code&gt;settings.json&lt;/code&gt; 中进行设置&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;&amp;quot;python.linting.flake8Enabled&amp;quot;: true,
+&amp;quot;python.linting.flake8Args&amp;quot;: [
+    &amp;quot;--max-line-length=120&amp;quot;,
+    &amp;quot;--ignore=E401 E402,F841,F401,F403,E302,E305,W504&amp;quot;,
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;未完待续&#34;&gt;未完待续...&lt;/h2&gt;
+">基于 VSCode 的 Python 开发环境</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/freesurfer-use/"" data-c="
+          &lt;p&gt;本文档的操作流程基于 Ububtu 18.04LTS 以及 Freesurfer 6.0，安装过程记录在另一篇文档 &lt;em&gt;&lt;a href=&#34;http://193824.xyz/post/zai-ubuntu1804lts-zhong-an-zhuang-freesurfer/&#34;&gt;在 Ubuntu18.04LTS 中安装 FreeSurfer&lt;/a&gt;&lt;/em&gt; 中。本文档操作全部在终端中进行，Freesurfer 的 GUI 仅用作查看操作结果。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;创建于2020-03-07&lt;/p&gt;
+&lt;p&gt;修改1：2020-03-08&lt;/p&gt;
+&lt;p&gt;​    修正SUBJECTS_DIR的设置方法与单subject多图像的文件夹结构&lt;/p&gt;
+&lt;p&gt;​    修正recon-all在单subject多图像情况下的命令&lt;/p&gt;
+&lt;p&gt;修改2：2020-03-12&lt;/p&gt;
+&lt;p&gt;​    删除修改1中增加的单subject多图像情况&lt;/p&gt;
+&lt;p&gt;​    新增多图像的多线程处理内容&lt;/p&gt;
+&lt;p&gt;修改3：2020-04-15&lt;/p&gt;
+&lt;p&gt;​    新增DICOM转nii内容&lt;/p&gt;
+&lt;p&gt;修改4：2020-04-17&lt;/p&gt;
+&lt;p&gt;​    新增批处理提取统计学结果的内容&lt;/p&gt;
+&lt;p&gt;修改5：2020-04-27&lt;/p&gt;
+&lt;p&gt;​    新增PET处理内容&lt;/p&gt;
+&lt;p&gt;修改6：2020-05-12&lt;/p&gt;
+&lt;p&gt;​    加入PET后的批处理流程&lt;/p&gt;
+&lt;p&gt;修改7：2020-07-23&lt;/p&gt;
+&lt;p&gt;​    对PET分割限定线程数避免报错&lt;br&gt;
+补充了一些后续步骤&lt;/p&gt;
+&lt;p&gt;修改8：2020-11-02&lt;br&gt;
+新增海马子区域分割流程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;subjects_dir&#34;&gt;SUBJECTS_DIR&lt;/h2&gt;
+&lt;p&gt;首先需要用户自定义 &lt;code&gt;SUBJECTS_DIR&lt;/code&gt;，不推荐使用放在 Freesurfer 安装目录下的默认文件夹，自定义 &lt;code&gt;SUBJECTS_DIR&lt;/code&gt; 的命令如下：&lt;strong&gt;操作中严格避免中文路径的出现！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 设置到桌面上
+export SUBJECTS_DIR=/home/用户名/Desktop/Subjects
+# 快速设置为当前文件夹
+export SUBJECTS_DIR=$(pwd)
+
+# 查看当前SUBJECTS_DIR
+echo $SUBJECTS_DIR
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 &lt;code&gt;SUBJECTS_DIR&lt;/code&gt; 下，可以直接放置 &lt;code&gt;sample-001.mgz, sample-002.mgz&lt;/code&gt; 等文件。下方文件夹结构为分割完成后的文件夹结构：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;SUBJECTS_DIR
+├── sample-001
+│   ├── label
+│   ├── mri
+│   │   ├── orig
+│   │   └── transforms
+│   │       └── bak
+│   ├── scripts
+│   ├── stats
+│   ├── surf
+│   ├── tmp
+│   ├── touch
+│   └── trash
+└── sample-002
+    ├──...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;recon-all&#34;&gt;recon-all&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;recon-all&lt;/code&gt; 为 Freesurfer 的核心命令，使用命令 &lt;code&gt;recon-all --help&lt;/code&gt; 可以查看详细帮助。在操作时可以使用以下命令切换到 &lt;code&gt;SUBJECTS_DIR&lt;/code&gt; 下并执行 &lt;code&gt;recon-all&lt;/code&gt;，如果需要同时处理多个图像，可以使用后面提到的 &lt;a href=&#34;#parallel&#34;&gt;Parallel&lt;/a&gt;；如果需要处理文件夹形式的 DICOM 图像，可先用 &lt;a href=&#34;#dcm2niix&#34;&gt;dcm2niix&lt;/a&gt; 转换成 nii 格式。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd $SUBJECTS_DIR
+# bert 是可自己设置的 subject 名字
+recon-all -s bert -i sample-001.mgz -all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面的命令成功执行后会持续数个小时，处理结果会分类存放在上一部分列出的文件夹结构中。&lt;/p&gt;
+&lt;h2 id=&#34;freeview&#34;&gt;freeview&lt;/h2&gt;
+&lt;p&gt;在终端中输入 &lt;code&gt;freeview&lt;/code&gt; 进入 GUI，然后通过 &lt;code&gt;File - Load Volume&lt;/code&gt; 加载 &lt;code&gt;mri -&amp;gt; T1.mgz / aseg.mgz / wm.mgz / brainmask.mgz&lt;/code&gt;，&lt;code&gt;aseg.mgz&lt;/code&gt;是灰质白质等解构的分割结果，可以选择 Color map 为 Lookup Table 并调低透明度进行观察。&lt;/p&gt;
+&lt;p&gt;recon-all的结果中还包含了曲面信息，使用 &lt;code&gt;File - Load Surface&lt;/code&gt; 加载 &lt;code&gt;surf -&amp;gt; lh.pial / lh.white / lh.inflated&lt;/code&gt; 以及对应的右脑文件 &lt;code&gt;surf -&amp;gt; rh.pial / rh.white / rh.inflated&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;下面的命令行操作与上面的结果完全相同，无需重复操作：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$&amp;gt; freeview -v \
+    bert/mri/T1.mgz \
+    bert/mri/wm.mgz \
+    bert/mri/brainmask.mgz \
+    bert/mri/aseg.mgz:colormap=lut:opacity=0.2 \
+    -f \
+    bert/surf/lh.white:edgecolor=blue \
+    bert/surf/lh.pial:edgecolor=red \
+    bert/surf/rh.white:edgecolor=blue \
+    bert/surf/rh.pial:edgecolor=red
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;stats&#34;&gt;stats&lt;/h2&gt;
+&lt;p&gt;Freesurfer的 &lt;code&gt;recon-all&lt;/code&gt; 命令已经处理的MR数据的体积以及皮层厚度信息，使用 &lt;code&gt;asegstats2table, aparcstats2table&lt;/code&gt; 两个命令可以分别提取出。体积与皮层厚度结果均是按照已经分割好的脑区进行统计，皮层厚度只能对左脑和右脑分别输出。另外，这两个命令仅能输出txt格式文档，查看时需要使用excel进行转换。使用命令如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# https://surfer.nmr.mgh.harvard.edu/fswiki/asegstats2table
+asegstats2table --subjects bert --common-segs --meas volume --stats=aseg.stats --table=segststs.txt
+
+# https://surfer.nmr.mgh.harvard.edu/fswiki/aparcstats2table
+# aparcstats2table 需要分别提取左右脑的结果
+aparcstats2table --subjects bert --hemi lh --meas thickness --parc=aparc --tablefile=aparc.txt
+aparcstats2table --subjects bert --hemi rh --meas thickness --parc=aparc --tablefile=aparc.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;span-idparallelparallelspan&#34;&gt;&lt;span id=&#34;parallel&#34;&gt;Parallel&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Freesurfer 本身无法同时对多个图像（多个 subjects ）进行计算，为了充分利用电脑的多核性能节省计算时间，需借助一个多线程工具，名为 GNU Parallel。Parallel 在 Ubuntu下可以直接使用 &lt;code&gt;sudo apt-get install parallel&lt;/code&gt; 进行安装。多线程进行 recon-all 的命令如下，使用此方法会将每个图像的文件名作为分割该图像时的subject名字。执行此命令时可能没有信息在终端输出，执行完成后会一次性输出，如需查看进行状态，可以到 &lt;code&gt;./scripts/recon-all.log&lt;/code&gt; 查看 recon-all 日志.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# mgz 为后缀，需要指定参与 CPU 参与计算的核心数则在 parallel 后加：--jobs 核心数
+ls *.mgz | parallel recon-all –s {.} –i {} –all
+
+# 统计数据提取也可以使用 Parallel
+ls *.nii | parallel asegstats2table --subjects {.} --common-segs --meas volume --stats=aseg.stats --table=segststs_{.}.txt
+ls *.nii | parallel aparcstats2table --subjects {.} --hemi lh --meas thickness --parc=aparc --tablefile=aparc_{.}_lh.txt
+ls *.nii | parallel aparcstats2table --subjects {.} --hemi rh --meas thickness --parc=aparc --tablefile=aparc_{.}_rh.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对于上述 Parallel 导出的一系列统计txt文件，我编写了 python 程序转换成更易读的 csv 文件，将下面的文件保存为 &lt;code&gt;txt2csv.py&lt;/code&gt; 然后放在当前的 &lt;code&gt;SUBJECTS_DIR&lt;/code&gt; 下，在终端中执行 &lt;code&gt;python txt2csv.py&lt;/code&gt; 即可进行转换。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import csv
+import os
+
+
+def txt2csv(inputfile, outputfile):
+    datacsv = open(outputfile, &#39;w&#39;)
+    csvwriter = csv.writer(datacsv, dialect=(&amp;quot;excel&amp;quot;))
+    mainfileH = open(inputfile, &#39;rb&#39;)
+    for line in mainfileH.readlines():
+        # print &amp;quot;Debug: &amp;quot; + line.replace(&#39;\n&#39;, &#39;&#39;)
+        csvwriter.writerow([a for a in line.decode().split(&#39;\t&#39;)])
+    datacsv.close()
+    mainfileH.close()
+
+
+if __name__ == &amp;quot;__main__&amp;quot;:
+    txt_list = [
+        x for x in os.listdir(&#39;.&#39;)
+        if os.path.isfile(x) and os.path.splitext(x)[1] == &#39;.txt&#39;
+    ]
+    for txt in txt_list:
+        outputfile = txt.split(&#39;txt&#39;)[0] + &#39;csv&#39;
+        txt2csv(txt, outputfile)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;span-iddcm2niixdcm2niixspan&#34;&gt;&lt;span id=&#34;dcm2niix&#34;&gt;dcm2niix&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;recon-all 命令无法对文件夹形式的 DICOM 图像直接进行处理，借用 &lt;a href=&#34;https://github.com/rordenlab/dcm2niix&#34;&gt;dcm2niix&lt;/a&gt; 库以及 parallel 可以进行批量转换。dcm2niix 默认将转换结果放到原 DICOM 文件夹内，不方便后续处理，所以用设置 &lt;code&gt;-o&lt;/code&gt; 参数指定输出文件夹。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 安装
+sudo apt-get install pigz dcm2niix
+
+# 使用
+# 将多个 DICOM 文件夹放到同一目录下，并避免有其他非 DICOM 文件
+ls | parallel dcm2niix -o 目标输出文件夹 {}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;petsurfer&#34;&gt;&lt;a href=&#34;https://surfer.nmr.mgh.harvard.edu/fswiki/PetSurfer&#34;&gt;PETSurfer&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;PETSurfer 是 Freesurfer 6 中引入的新功能，包含部分容积校正以及力学建模等功能。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个分割&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 替换 SUBJECT
+gtmseg --s SUBJECT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此步操作会使用生成一个高精度的分割结果 &lt;code&gt;SUBJECT/mri/gtmseg.mgz&lt;/code&gt; ，使用到原来的 &lt;code&gt;ageg.mgz&lt;/code&gt; 提供皮层下结构，使用 &lt;code&gt;?h.aparc.annot&lt;/code&gt; 提供皮层结构，还将估计一些额外的脑结构。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PET 配准到 MR&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 替换 PET_IMAGE, template名字也可以修改
+# PET_IMAGE 为PET路径/PET文件名
+mri_coreg --s subject --mov PET_IMAGE --reg template.reg.lta
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;检查配准结果使用以下命令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;tkregisterfv --mov PET_IMAGE --reg template.reg.lta --surfs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;部分容积校正&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 其中 PET_IMAGE FWHM 均需要替换
+# PET_IMAGE 为PET路径/PET文件名
+# 如果不需要参考脑桥代谢值，可以再命令中补充 --no-rescale
+# FWHM 取决于设备，医大一院用的2.8
+mri_gtmpvc --i PET_IMAGE --reg template.reg.lta --psf 2.8 --seg gtmseg.mgz --default-seg-merge  --auto-mask PSF .01 --mgx .01 --o gtmpvc.output 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;   
+官网对各参数的解释如下：
+   
+   &amp;gt;--psf FWHM is the full-width/half-max of the the point-spread function (PSF) of the scanner as measured in image space (also known as the burring function). The blurring function depends on the scanner and reconstruction method; here it is modeled as an isotropic Gaussian filter of the given FWHM. Eg, an HR+ is typically about 6mm. This parameter has nothing to do with applying smoothing. Set this to 0 to turn off PVC. If you don&#39;t know what to set this to, ask your PET physicist.
+   &amp;gt;--seg gtmseg.mgz is the segmentation created with gtmseg
+   &amp;gt;--default-seg-merge will merge several segmentations, eg, all the ventricular CSF segments will be merged into one ROI
+   &amp;gt;--auto-mask FWHM .01 will create a mask to exclude voxels from the analysis (saves time). Output volumes will be reduced to a bounding box around this mask (saves space)
+   &amp;gt;--mgx .01 Run Muller-Gartner analysis. 01 is the GM threshold. Only necessary if you want to do a voxel-wise analysis.
+   &amp;gt;--o gtmpvc.output This is the output folder.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此步生成了一个文件 &lt;code&gt;./gtmpvc.output/gtm.stats&lt;/code&gt; ，里面存放了各个 ROI 的代谢信息，阅读参考如下内容：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;9 17 Left-Hippocampus subcort_gm 473 174.083 1.406 0.1216&lt;/p&gt;
+&lt;p&gt;9 = ninth row&lt;br&gt;
+17 = index for ROI&lt;br&gt;
+Left-Hippocampus = name of ROI&lt;br&gt;
+subcort_gm = tissue class&lt;br&gt;
+473 = number of PET voxels in the ROI&lt;br&gt;
+174 = variance reduction factor for ROI (based on GLM/SGTM)&lt;br&gt;
+1.406 = PVC uptake of ROI relative to Pons&lt;br&gt;
+0.1216 = resdiual varaince across voxels in the ROI&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;引入pet后的批处理&#34;&gt;引入PET后的批处理&lt;/h2&gt;
+&lt;p&gt;简单的PET批处理方法需要从转DICOM开始进行操作。首先切换到在目标目录打开终端并设置为&lt;code&gt;SUBJECTS_DIR&lt;/code&gt; ，并建立两个存放DICOM的文件夹，然后分别讲MR和PET图像存进去：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export SUBJECTS_DIR=$(pwd)
+# 分别为PET图像和MR图像建立一个名为PET和MR的文件夹，分隔开
+mkdir MR
+mkdir PET
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;下面开始转换格式，转换的nii使用人名命名，&lt;strong&gt;如果有空格或者重复人名需要手动修正&lt;/strong&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 切换到MR文件夹，输出文件直接放到 SUBJECTS_DIR
+cd MR
+ls | parallel dcm2niix -o $SUBJECTS_DIR -f %n -b n {}
+
+# 切换到PET文件夹
+cd ../PET
+ls | parallel dcm2niix -o $(pwd) -f pet_%n -b n {}
+
+# 返回 SUBJECTS_DIR
+cd ..
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后对MR进行分割&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;#此时目录应该是SUBJECTS_DIR
+ls *.nii | parallel recon-all –s {.} –i {} –all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后处理PET，各命令含义见上一节：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;ls *.nii | parallel --jobs 4 gtmseg --s {.}
+
+ls *.nii | parallel mri_coreg --s {.} --mov PET/pet_{} --reg {.}.reg.lta
+# 配准结果检查不使用批处理
+
+# 如果不需要参考脑桥代谢值，可以再命令中补充 --no-rescale
+# FWHM 需要指定一个值
+ls *.nii | parallel --jobs 4 mri_gtmpvc --i PET/pet_{} --reg {.}.reg.lta --psf FWHM --seg gtmseg.mgz --default-seg-merge  --auto-mask PSF .01 --mgx .01 --o {.}_gtmpvc.output 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;提取recon-all的统计结果&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir asegStats
+ls *.nii | parallel asegstats2table --subjects {.} --common-segs --meas volume --stats=aseg.stats --table=./asegStats/{.}_segststs.txt
+
+# https://surfer.nmr.mgh.harvard.edu/fswiki/aparcstats2table
+# aparcstats2table 需要分别提取左右脑的结果
+mkdir aparcStats
+ls *.nii | parallel aparcstats2table --subjects {.} --hemi lh --meas thickness --parc=aparc --tablefile=./aparcStats/{.}_aparc_lh.txt
+ls *.nii | parallel aparcstats2table --subjects {.} --hemi rh --meas thickness --parc=aparc --tablefile=./aparcStats/{.}_aparc_rh.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;提取 gtmseg 及其统计结果&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir gtmseg
+ls *.nii | parallel cp ./{.}/mri/gtmseg.mgz ./gtmseg/{.}_gtmseg.mgz
+
+mkdir gtmVolume
+ls *.nii | parallel asegstats2table --subjects {.} --common-segs --meas volume --stats=gtmseg.stats --table=./gtmVolume/{.}_gtmVolume.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;提取PET处理结果 gtm.stats.dat&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir gtmStats
+ls *.nii | parallel cp ./{.}_gtmpvc.output/gtm.stats.dat ./gtmStats/{.}.gtm.stats.dat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;海马子区域分割&#34;&gt;&lt;a href=&#34;https://surfer.nmr.mgh.harvard.edu/fswiki/HippocampalSubfields&#34;&gt;海马子区域分割&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;进行此步骤的前提是正确安装了matlab runtime，然后只需要执行 &lt;code&gt;recon-all&lt;/code&gt; 命令&lt;/p&gt;
+&lt;p&gt;如果是一个新的待分割数据，需要重新开始 &lt;code&gt;recon-all&lt;/code&gt; 过程&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt; # bert可以自定义
+ recon-all -all -s bert -hippocampal-subfields-T1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果之前进行过 &lt;code&gt;recon-all&lt;/code&gt; 分割，只需要执行&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# bert为原来的subject名称
+recon-all -s bert -hippocampal-subfields-T1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;分割结果存放在文件夹 &lt;code&gt;$SUBJECTS_DIR/bert/mri/&lt;/code&gt;中，可以使用freeview查看分割结果&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd ./bert/mri
+freeview -v nu.mgz -v lh.hippoSfLabels-T1.v10.mgz:colormap=lut -v rh.hippoSfLabels-T1.v10.mgz:colormap=lut
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;有关分割结果的介绍，fs文档原文如下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The output will consist of six files (three for each hemisphere) that can be found under the subject&#39;s mri directory (in this example, $SUBJECTS_DIR/bert/mri/):&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[lr]h.hippoSfLabels-T1.v10.mgz&lt;/em&gt;: they store the discrete segmentation volume (lh for the left hemisphere, rh for the right) at 0.333 mm resolution.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[lr]h.hippoSfLabels-T1.v10.FSvoxelSpace.mgz&lt;/em&gt;: they store the discrete segmentation volume in the &lt;a href=&#34;https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurfer&#34;&gt;FreeSurfer&lt;/a&gt; voxel space (normally 1mm isotropic, unless higher resolution data was used in recon-all with the flag -cm).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;[lr]h.hippoSfVolumes-T1.v10.txt&lt;/em&gt;: these text files store the estimated volumes of the subfields and of the whole hippocampi.&lt;/p&gt;
+&lt;p&gt;Note that [lr]h.hippoSfLabels-T1.v10.mgz covers only a patch around the hippocampus, at a higher resolution than the input image. The segmentation and the image are defined in the same physical coordinates, so you can visualize them simultaneously with (run from the subject&#39;s mri directory):&lt;/p&gt;
+&lt;p&gt;On the other hand [lr]h.hippoSfLabels-T1.v10.FSvoxelSpace.mgz lives in the same voxel space as the other &lt;a href=&#34;https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurfer&#34;&gt;FreeSurfer&lt;/a&gt; volumes (e.g., orig.mgz, nu.mgz, aseg.mgz), so you can use it directly to produce masks for further analyses, but its resolution is lower than that of [lr]h.hippoSfLabels-T1.v10.mgz.&lt;/p&gt;
+&lt;/blockquote&gt;
+">Freesurfer操作文档</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/install-freesurfer-on-ubuntu1804lts/"" data-c="
+          &lt;p&gt;本文档主要参考了&lt;a href=&#34;https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall&#34;&gt;FreeSurfer官方教程&lt;/a&gt;以及CSDN上的一篇文章&lt;a href=&#34;https://blog.csdn.net/qq_32696375/article/details/84024326&#34;&gt;Ubuntu 18.04安装FreeSurfer软件&lt;/a&gt;。由于系统与软件的更新迭代，必须进行一些额外的操作才能够成功安装。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;修改1：2020-02-19&lt;/p&gt;
+&lt;p&gt;​    根据相关教程增加了freesurfer 6.0的补丁包安装步骤&lt;/p&gt;
+&lt;p&gt;修改2：2020-03-02&lt;/p&gt;
+&lt;p&gt;​    在使用过程中发现freesurfer依赖python环境，需要安装，补充在额外操作-Python版本中&lt;/p&gt;
+&lt;p&gt;修改3：2020-03-14&lt;/p&gt;
+&lt;p&gt;​    修改了一些输入错误&lt;/p&gt;
+&lt;p&gt;修改4：2020-08-03&lt;/p&gt;
+&lt;p&gt;​    新增清华镜像以及dcm2niix等库&lt;/p&gt;
+&lt;p&gt;修改5：2020-11-02&lt;/p&gt;
+&lt;p&gt;新增Matlab Runtime配置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;下载freesurfer&#34;&gt;下载FreeSurfer&lt;/h2&gt;
+&lt;p&gt;官网给出了下载链接以及系统需求&lt;/p&gt;
+&lt;p&gt;Ubuntu里使用命令下载：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0/freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将下载数据移动到/usr/local文件夹下并解压：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo mv freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz /usr/local
+cd /usr/local
+sudo tar xzvf freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;获取license&#34;&gt;获取license&lt;/h2&gt;
+&lt;p&gt;获取license的链接为：&lt;a href=&#34;https://surfer.nmr.mgh.harvard.edu/registration.html&#34;&gt;&lt;em&gt;FreeSurfer&lt;/em&gt; Download and Registration&lt;/a&gt;，注册后邮箱会收到&lt;code&gt;license.txt&lt;/code&gt;文件，复制其中内容。&lt;/p&gt;
+&lt;p&gt;创建license文本然后粘贴license内容：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo touch freesurfer/license.txt
+sudo su
+cd /usr/local/freesurfer
+gedit license.txt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;配置环境变量&#34;&gt;配置环境变量&lt;/h2&gt;
+&lt;p&gt;输入以下指令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo gedit  /etc/profile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在打开文件的最后输入以下语句：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export FREESURFER_HOME=/usr/local/freesurfer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;输入以下指令：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo gedit  /etc/bash.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在打文件最后输入以下语句：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export FREESURFER_HOME=/usr/local/freesurfer
+source $FREESURFER_HOME/SetUpFreeSurfer.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;p&gt;期间如果出现如下提示忽略即可：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Set document metadata failed: 不支持设置属性 metadata::gedit-encoding
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;经过上述环境变量设置之后，每次启动终端都会有FreeSurfer的相关信息输出：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;-------- freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0-2beb96c --------
+Setting up environment for FreeSurfer/FS-FAST (and FSL)
+FREESURFER_HOME   /usr/local/freesurfer
+FSFAST_HOME       /usr/local/freesurfer/fsfast
+FSF_OUTPUT_FORMAT nii.gz
+SUBJECTS_DIR      /usr/local/freesurfer/subjects
+MNI_DIR           /usr/local/freesurfer/mni
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;额外操作&#34;&gt;额外操作&lt;/h2&gt;
+&lt;h3 id=&#34;缺少的库&#34;&gt;缺少的库&lt;/h3&gt;
+&lt;p&gt;由于我操作的Ubuntu系统之前从未使用过，在启动FreeSurfer时会出现报错，提示缺少库文件，比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 缺少tcsh
+bash: /usr/local/freesurfer/bin/recon-all: /bin/tcsh: 解释器错误: 没有那个文件或目录
+# 缺少libpng12
+freeview.bin: error while loading shared libraries: libpng12.so.0: cannot open shared object file: No such file or directory
+# 缺少libjpg
+freeview.bin: error while loading shared libraries: libjpeg.so.62: cannot open shared object file: No such file or directory
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中tcsh与libjpd可以直接安装，在Ubuntu 16.10+的系统中，libpng12已经被弃用，无法直接安装，需要手动下载编译，在进行操作前建议将 Ubuntu 镜像替换为 &lt;a href=&#34;https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/&#34;&gt;清华镜像&lt;/a&gt; 。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 替换镜像之后
+sudo apt update
+sudo apt upgrade
+sudo apt install tcsh libjpeg62 dcm2niix htop
+wget http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
+sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;python版本&#34;&gt;Python版本&lt;/h3&gt;
+&lt;p&gt;在对&lt;code&gt;recon-all&lt;/code&gt;命令得到的结果进行统计学分析是使用到了两个命令&lt;code&gt;asegstats2table&lt;/code&gt;，&lt;code&gt;aparcstats2table&lt;/code&gt;，这两个命令直接执行会报错：&lt;code&gt;/usr/bin/env: &amp;quot;python&amp;quot;: 没有那个文件或目录&lt;/code&gt;，这是因为在我使用的Ubuntu18.04LTS中，默认的python为python3而且需要使用命令&lt;code&gt;python3&lt;/code&gt;调出，解决这个问题可以将&lt;code&gt;python&lt;/code&gt;命令绑定为&lt;code&gt;python3&lt;/code&gt;，但是网络上查到的和freesurfer有关的内容均使用了python2，因此直接安装python2即可解决问题。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo apt-get install python
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tips：在安装是如果提示：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;E: 无法获得锁 /var/lib/dpkg/lock-frontend - open (11: 资源暂时不可用)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参考一篇&lt;a href=&#34;https://www.cnblogs.com/python-wen/p/11023944.html&#34;&gt;博客&lt;/a&gt;的内容，两种解决方法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 杀掉apt-get进程：
+ps aux | grep apt-get
+sudo kill PID
+# 强制解锁：
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+
+# 经检验第二种方法有用，在使用第二种方法后如果仍然出现报错，但是查看进程发现并没有apt-get进程信息，此时通过重启系统，再重新安装软件，发现可以成功安装。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;以上是我在安装过程中遇到的库缺失情况，实际操作中需要根据报错查看缺失库的详情&lt;/p&gt;
+&lt;h2 id=&#34;用例测试&#34;&gt;用例测试&lt;/h2&gt;
+&lt;p&gt;测试FreeSurfer能否正常工作可以直接使用官方的例程：&lt;/p&gt;
+&lt;p&gt;FreeSurfer comes with two sample data files (sample-001.mgz and sample-002.mgz) as well as a fully recon-ed subject named bert. These data files can be used to test that your FreeSurfer installation was done properly. To test your installation, please try the following examples:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt; Convert the sample-001.mgz to nifti format.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$&amp;gt; cp $FREESURFER_HOME/subjects/sample-001.mgz .
+$&amp;gt; mri_convert sample-001.mgz sample-001.nii.gz
+...
+reading from sample-001.mgz...
+TR=7.25, TE=3.22, TI=600.00, flip angle=7.00
+i_ras = (-0, -1, -0)
+j_ras = (-0, 0, -1)
+k_ras = (-1, 0, 0)
+writing to sample-001.nii.gz...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt; Perform a full recon-all on the nifti file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$&amp;gt; export SUBJECTS_DIR=&amp;lt;path to subject directory&amp;gt;
+$&amp;gt; recon-all -i sample-001.nii.gz -s bert -all (creates a folder called bert in SUBJECTS_DIR)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt; Perform a full recon-all on a pre-existing subject folder&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$&amp;gt; export SUBJECTS_DIR=&amp;lt;path to subject directory&amp;gt;
+$&amp;gt; recon-all -s bert -all
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Example 4:&lt;/strong&gt; View the output volumes, surfaces and subcortical segmentation of the fully recon-ed subject bert.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$&amp;gt; cd $SUBJECTS_DIR
+$&amp;gt; freeview -v \
+    bert/mri/T1.mgz \
+    bert/mri/wm.mgz \
+    bert/mri/brainmask.mgz \
+    bert/mri/aseg.mgz:colormap=lut:opacity=0.2 \
+    -f \
+    bert/surf/lh.white:edgecolor=blue \
+    bert/surf/lh.pial:edgecolor=red \
+    bert/surf/rh.white:edgecolor=blue \
+    bert/surf/rh.pial:edgecolor=red
+# 正常的话应该出现加载完成示例图像的GUI
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;补丁包&#34;&gt;补丁包&lt;/h2&gt;
+&lt;p&gt;由于6.0.0版本部分指令运行时存在bug，因此先打好补丁避免遇到类似问题。下载freesurfer 6.0.0 patch：&lt;a href=&#34;ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/&#34;&gt;6.0.0 patch地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果需要其他版本补丁的下载，也可以在这个网站去查询对应版本是否发布patch包：&lt;a href=&#34;ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer&#34;&gt;freesurfer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;根据readme文件的说明，分别备份freesurfer下这些指令的文件，然后将补丁文件复制过去覆盖即可，Terminal下输入：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/make_average_subject
+wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/make_average_surface
+wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/mri_aparc2aseg.linux
+wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/mri_glmfit-sim
+wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/mri_segstats.linux
+wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/mris_anatomical_stats.linux
+wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/recon-all
+wget ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0-patch/vol2subfield
+
+sudo cp $FREESURFER_HOME/bin/make_average_subject $FREESURFER_HOME/bin/make_average_subject.backup
+sudo cp make_average_subject $FREESURFER_HOME/bin/make_average_subject
+
+sudo cp $FREESURFER_HOME/bin/make_average_surface $FREESURFER_HOME/bin/make_average_surface.backup
+sudo cp make_average_surface $FREESURFER_HOME/bin/make_average_surface
+
+sudo cp $FREESURFER_HOME/bin/mri_aparc2aseg $FREESURFER_HOME/bin/mri_aparc2aseg.backup
+sudo cp mri_aparc2aseg.linux $FREESURFER_HOME/bin/mri_aparc2aseg
+
+sudo cp $FREESURFER_HOME/bin/mri_glmfit-sim $FREESURFER_HOME/bin/mri_glmfit-sim.backup
+sudo cp mri_glmfit-sim $FREESURFER_HOME/bin/mri_glmfit-sim
+
+sudo cp $FREESURFER_HOME/bin/mri_segstats $FREESURFER_HOME/bin/mri_segstats.backup
+sudo cp mri_segstats.linux $FREESURFER_HOME/bin/mri_segstats
+
+sudo cp $FREESURFER_HOME/bin/mris_anatomical_stats $FREESURFER_HOME/bin/mris_anatomical_stats.backup
+sudo cp mris_anatomical_stats.linux $FREESURFER_HOME/bin/mris_anatomical_stats
+
+sudo cp $FREESURFER_HOME/bin/recon-all $FREESURFER_HOME/bin/recon-all.backup
+sudo cp recon-all $FREESURFER_HOME/bin/recon-all
+
+# 原freesurfer中好像没有vol2subfield，无需备份直接拷贝即可
+sudo cp vol2subfield $FREESURFER_HOME/bin/vol2subfield
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;matlab-runtime&#34;&gt;Matlab Runtime&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://surfer.nmr.mgh.harvard.edu/fswiki/MatlabRuntime&#34;&gt;Freesurfer关于Matlab Runtime的文档&lt;/a&gt; 使用 &lt;code&gt;fs_install_mcr&lt;/code&gt; 自动安装需要的Matlab，步骤如下&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 首次需要安装fs_install_mcr 
+cd $FREESURFER_HOME/bin
+sudo curl https://raw.githubusercontent.com/freesurfer/freesurfer/dev/scripts/fs_install_mcr -o fs_install_mcr &amp;amp;&amp;amp; chmod +x fs_install_mcr
+# FS 6.0版本下载 Matlab r2012b
+fs_install_mcr R2012b
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;但是我在执行过程中遇到上面的命令无法下载Matlab安装包就报错了，另一个方案就是手动去 &lt;a href=&#34;https://ww2.mathworks.cn/help/compiler_sdk/dotnet/install-the-matlab-runtime.html&#34;&gt;matlab官网&lt;/a&gt; 下载 r2012b linux版，下面可以执行命令进行下载。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 新建一个文件夹进行操作
+mkdir matlab
+cd matlab
+wget https://ssd.mathworks.com/supportfiles/MCR_Runtime/R2012b/MCR_R2012b_glnxa64_installer.zip
+unzip MCR_R2012b_glnxa64_installer.zip
+sudo ./install -mode silent -agreeToLicense yes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后需要将matlab的安装目录通过软链接映射到Freesurfer的目录下，matlab安装目录默认为 &lt;code&gt;/usr/local/MATLAB/MATLAB_Compiler_Runtime&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd $FREESURFER_HOME
+ln -s /usr/local/MATLAB/MATLAB_Compiler_Runtime/v80 MCRv80
+&lt;/code&gt;&lt;/pre&gt;
+">在Ubuntu18.04LTS中安装FreeSurfer</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/reconnect-wifi/"" data-c="
+          &lt;p&gt;疫情期间需要远程访问电脑进行工作，实验室电脑一旦出现网络问题就只能求助老师到现场重连WIFI。为了监测网络状态，并在断网时能够及时自动重新连回实验室路由器，编写了以下脚本。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;获取目标wifi的ssid&#34;&gt;获取目标WIFI的ssid&lt;/h2&gt;
+&lt;p&gt;首先使用如下命令查看周围的WIFI&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;netsh wlan show networks mode=bssid
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后查看已经连接过WIFI的配置文件&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;netsh wlan show profiles
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;记下目标WIFI的名称与ssid，应该是相同的，不能记错，否则断开后程序再也无法连接。&lt;/p&gt;
+&lt;p&gt;实际上，连接WIFI的主要命令只有两句&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;# XXX按目标WIFI填写
+netsh wlan disconnect
+netsh wlan connect ssid=XXX name=XXX
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;windows批处理脚本&#34;&gt;Windows批处理脚本&lt;/h2&gt;
+&lt;p&gt;此脚本的内容为每十分钟检测电脑与百度和大连理工大学网信中心之间的连接性，在确认断连后执行上面的重连命令。&lt;em&gt;202.118.66.6为大连理工大学网信中心DNS服务器IP，非大连理工大学校园网环境无法使用&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cmd&#34;&gt;@echo off
+echo WIFI自动重连服务正在进行中.......
+echo 停止服务请按 Ctrl+C
+:begin
+echo %date% %time%
+ping baidu.com
+rem echo %errorlevel%
+if %errorlevel%==1 goto ping2
+goto loop
+ 
+:ping2
+ping 202.118.66.6
+rem echo %errorlevel%
+if %errorlevel%==1 goto reconnect
+goto loop
+
+:reconnect
+echo %date% %time% 网络主动断开
+netsh wlan disconnect
+echo %date% %time% 正在重新连接中....
+netsh wlan connect ssid=MICCAI_5G name=MICCAI_5G
+echo %date% %time% 已发送连接请求....ssid=MICCAI_5G
+goto loop
+ 
+:loop
+timeout 600
+goto begin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
+&lt;p&gt;脚本已经部署运行，还未有机会触发重连功能。&lt;/p&gt;
+&lt;p&gt;除了监测与互联网的连接性外，还可以采取每日定时断开WIFI重新连接的方法，或者在Windows系统的计划任务程序功能中设置WIFI状态触发等方式。&lt;/p&gt;
+">WIFI断连自动连接脚本</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/jupyter-env/"" data-c="
+          &lt;p&gt;之前在吴恩达的深度学习课上接触了Jupyter，一直在本地使用，每次想启动都得打开PowerShell输入jupyter notebook的命令，启动后的目录下还包含路径下其他文件，很是不够方便。&lt;/p&gt;
+&lt;p&gt;其实我一直有一个vps服务器默默工作在大洋彼岸，心想着可以在上面搭建个Jupyter环境，趁清明假期配置了一下。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;jupyter简介&#34;&gt;Jupyter简介&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;（来自维基百科）Jupyter Notebook（前身是IPython Notebook）是一个基于Web的交互式计算环境，用于创建Jupyter Notebook文档。Notebook一词可以通俗地引用许多不同的实体，主要是Jupyter Web应用程序、Jupyter Python Web服务器或Jupyter文档格式（取决于上下文）。Jupyter Notebook文档是一个JSON文档，遵循版本化模式，包含一个有序的输入/输出单元格列表，这些单元格可以包含代码、文本（使用Markdown语言）、数学、图表和富媒体，通常以“.ipynb”结尾扩展。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TianYang-TY/myPic/master/1554704076092.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;搭建流程&#34;&gt;搭建流程&lt;/h2&gt;
+&lt;p&gt;演示系统为Debian 9 ×64，为了教程新建的实例，一切从零开始。为了方便，用户直接用了root，如果服务器里面有重要数据的话建议新建一个用户。&lt;/p&gt;
+&lt;p&gt;使用ssh软件登录一下服务器。首先下载一下Anaconda，里面集成了很多常用的Python包，其中就有今天要用的Jupyter。Anaconda官网链接为：https://www.anaconda.com&lt;br&gt;
+然后使用wget命令把安装包下载下来。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TianYang-TY/myPic/master/1554704109611.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;之后使用&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;bash Anaconda3-2019.03-Linux-x86_64.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;命令一路安装，选择默认安装路径或者自定义，等待安装完成。然后重启终端。输入&lt;code&gt;conda --version&lt;/code&gt; 会得到conda版本号，代表安装成功。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TianYang-TY/myPic/master/1554704291084.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;接下来输入Python进入Python环境，分别执行&lt;code&gt;from notebook.auth import passwd&lt;/code&gt;与&lt;code&gt;passwd()&lt;/code&gt;设置notebook密码。把生成的sha1那一串保存下来备用。退出Python环境。&lt;/p&gt;
+&lt;p&gt;执行&lt;code&gt;jupyter notebook --generate-config&lt;/code&gt;命令生成jupyter配置文件。&lt;code&gt;vim ~/.jupyter/jupyter_notebook_config.py&lt;/code&gt;进入编辑。插入图中4行命令，最后一行的sha1为刚刚保存的sha1。保存并退出。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TianYang-TY/myPic/master/1554704253410.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;然后就可以测试是否配置成功了。执行&lt;code&gt;jupyter notebook --allow-root&lt;/code&gt; 。&lt;code&gt;--allow-root&lt;/code&gt;是root用户才需要输入的部分。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TianYang-TY/myPic/master/1554704235011.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;浏览器中输入你的&lt;code&gt;IP:端口&lt;/code&gt;，能打开jupyter界面表示安装成功。密码是刚才自己设置的密码。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;6&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TianYang-TY/myPic/master/1554704216247.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;如果想自定义默认目录的话需要再打开jupyter配置文件，加入一行&lt;code&gt;c.NotebookApp.notebook_dir = &#39;自定义目录&#39;&lt;/code&gt;，不再演示了。&lt;/p&gt;
+&lt;p&gt;接下来新建一个Python3文件，Hello World &amp;amp; Hello CoolApk&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;7&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/TianYang-TY/myPic/master/1554704194866.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;最后回到终端，停掉现在的jupyter进程。为了将jupyter作为后台服务进行，同时不会收到当前终端的影响，将启动命令改为&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;nohup jupyter notebook --allow-root &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;远程敲代码成就达成√&lt;/p&gt;
+&lt;p&gt;手机敲代码成就达成√&lt;/p&gt;
+">在vps上搭建Jupyter环境</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/tensorflow-gpu-env-under-windows/"" data-c="
+          &lt;p&gt;以 Windows 7 SP1 专业版系统为例，进行 Windows 下 TensorFlow GPU 环境的配置，尽可能复现课题组 Ubuntu 服务器中的版本。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;1-anaconda3&#34;&gt;1.  Anaconda3&lt;/h2&gt;
+&lt;p&gt;首先使用 Anaconda3 建立一个 Python 版本为 3.6 的新环境。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Anaconda3 下载链接
+清华镜像: https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
+官网链接: https://www.anaconda.com/distribution/#download-section
+
+# 新建 conda 环境
+conda create -n ENV_NAME python=3.6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;下面所有涉及 Python 的内容都会在该环境中进行&lt;/strong&gt;，如果不在该环境中，切换至该环境的命令为 &lt;code&gt;conda activate ENV_NAME&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;清华的链接里提供了替换镜像的方法，以便提高下载速度&lt;/p&gt;
+&lt;h2 id=&#34;2-visual-studio&#34;&gt;2.  Visual Studio&lt;/h2&gt;
+&lt;p&gt;安装 CUDA 的前提时安装有 Visual Studio，CUDA 9.0 支持 vs2010 - vs2019，我选择了 Visual Studio 2013 版，下载之后全部默认安装即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Visual Studio 2013 下载链接
+中文旗舰版：http://download.microsoft.com/download/0/7/5/0755898A-ED1B-4E11-BC04-6B9B7D82B1E4/VS2013_RTM_ULT_CHS.iso
+其他版本参考：https://blog.csdn.net/skykingf/article/details/12883655
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;3-nvidia-驱动&#34;&gt;3.  Nvidia 驱动&lt;/h2&gt;
+&lt;p&gt;Nvidia 驱动包括 3 个，显卡驱动（版本无要求）、CUDA 9.0、以及 cuDNN 7.0.5。需要按照上述次序安装。&lt;strong&gt;要和服务器中的 CUDA 9.0 以及 cuDNN 7.1.2 对应，上述 Windows 版本为唯一选择，否则会报错&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 显卡驱动
+Nvidia 官网：https://www.nvidia.com/Download/index.aspx?lang=cn
+# CUDA 9.0
+选择对应的系统：https://developer.nvidia.com/cuda-90-download-archive
+# cuDNN 7.0.5
+可能需要先注册，选择：Download cuDNN v7.0.5 (Dec 5, 2017), for CUDA 9.0
+https://developer.nvidia.com/rdp/cudnn-archive
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;下载的显卡驱动与 CUDA 是安装的，直接默认安装，cuDNN 是一个压缩包，解压后将其中的 &lt;code&gt;bin&lt;/code&gt;, &lt;code&gt;include&lt;/code&gt;, &lt;code&gt;lib&lt;/code&gt; 文件夹覆盖到 CUDA 的安装目录，默认安装即是 &lt;code&gt;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;cuda-验证&#34;&gt;CUDA 验证&lt;/h4&gt;
+&lt;p&gt;安装完成后打开 CUDA 的例程文件夹，默认为 &lt;code&gt;C:\ProgramData\NVIDIA Corporation\CUDA Samples\v9.0&lt;/code&gt; 选择对应 vs 版本的例程打开，在 vs 中右键 &lt;code&gt;build&lt;/code&gt; 一下，无报错即可。（&lt;strong&gt;vs 要用管理员身份运行&lt;/strong&gt;）&lt;/p&gt;
+&lt;h2 id=&#34;4-tensorflow-等&#34;&gt;4.  TensorFlow 等&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 安装 tensorflow-gpu 1.7
+# 优先使用 conda 安装，因为 conda 会考虑到依赖库之间的版本兼容性
+conda install tensorflow-gpu=1.7
+# 我安装的 conda 不知为何联网，只能换用 pip
+pip install tensorflow-gpu==1.7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;安装完之后进入 Python 环境，测试 TensorFlow，&lt;code&gt;import tensorflow as tf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;有可能会出现下面的警告，这是 Numpy 版本不兼容的问题&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-py&#34;&gt;...\lib\site-packages\tensorflow\python\framework\dtypes.py:516: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
+  _np_qint8 = np.dtype([(&amp;quot;qint8&amp;quot;, np.int8, 1)])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;解决这个问题需先查看 Numpy 的版本，然后决定是否替换。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 查看 Numpy 版本
+pip show numpy
+# 更改为 1.14.5 （与服务器相同）
+pip install numpy==1.14.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后再进入 Python 环境，执行下面语句，能正常输出 GPU 信息并且无报错即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import tensorflow as tf
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+&lt;/code&gt;&lt;/pre&gt;
+">Windows系统下TensorFlow-GPU环境搭建</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;p&gt;这里是我的个人站点，我在这里记录科研、生活相关的内容&lt;/p&gt;
+&lt;p&gt;本站最早于2019年9月使用 &lt;a href=&#34;https://hexo.io/zh-cn/&#34;&gt;Hexo&lt;/a&gt; 和 GitHub Page 进行构建&lt;/p&gt;
+&lt;p&gt;2020年11月将 Hexo 更换为 &lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;p&gt;幼儿园毕业的研究生，医学影像方向&lt;/p&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/TianYang-TY&#34;&gt;@TianYang-TY&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果你有话想对我说，也可以通过 &lt;a href=&#34;mailto:tianyang.tyy@gmail.com?subject=[Yang&#39;s blog]&#34;&gt;邮件&lt;/a&gt; 联系我&lt;/p&gt;
+">关于</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/protect-server-under-ssh-cracking/"" data-c="
+          &lt;p&gt;服务器端使用Debian 9×64系统，发现大量不存在的用户名登陆失败记录，于是使用Fail2ban进行IP封禁。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;查看系统登录日志仅root用户&#34;&gt;查看系统登录日志（仅root用户）&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;last|less&lt;/code&gt;会返回一系列登录成功的记录，格式为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;用户名+终端位置+IP地址+登录时间+在线时长
+root pts/1 IP Sat May 25 17:23 still logged in
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;lastb&lt;/code&gt;会返回一系列登录失败的记录，格式为&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;steam1   ssh:notty    188.165.44.214   Sat May 25 06:19 - 06:19  (00:00)
+dan      ssh:notty    134.175.18.237   Sat May 25 06:19 - 06:19  (00:00)
+steam1   ssh:notty    188.165.44.214   Sat May 25 06:19 - 06:19  (00:00)
+12345678 ssh:notty    82.223.130.223   Sat May 25 06:18 - 06:18  (00:00)
+12345678 ssh:notty    82.223.130.223   Sat May 25 06:18 - 06:18  (00:00)
+tom1     ssh:notty    164.132.62.233   Sat May 25 06:18 - 06:18  (00:00)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 查看不存在的用户名登录失败的日志
+grep &amp;quot;Failed password for invalid user&amp;quot; /var/log/auth.log | awk &#39;{print $13}&#39; | sort | uniq -c | sort -nr | more
+# 查看root账户登录失败记录
+sudo grep &amp;quot;Failed password for root&amp;quot; /var/log/auth.log | awk &#39;{print $11}&#39; | sort | uniq -c | sort -nr | more
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;下面的登录失败记录只是冰山一角&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;199 92.50.249.166
+199 47.107.55.172
+199 195.114.210.238
+199 194.56.72.6
+199 159.89.149.46
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;更改ssh端口&#34;&gt;更改SSH端口&lt;/h2&gt;
+&lt;p&gt;可以从输出结果看到这个服务器被攻击的相当频繁，还好之前改过SSH端口。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 一键更改端口
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssh_port.sh &amp;amp;&amp;amp; chmod +x ssh_port.sh &amp;amp;&amp;amp; bash ssh_port.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;下面是手动方法：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vim /etc/ssh/sshd_config&lt;/code&gt;打开SSH的配置文件，可以找到&lt;code&gt;#Port&lt;/code&gt;字样，默认一般为22，非常不安全，将其注释去掉并在其后添加一行，即&lt;code&gt;Port ***&lt;/code&gt;，添加新的SSH端口，在验证新端口好用后再将22端口注释掉。&lt;/p&gt;
+&lt;p&gt;在修改端口之后需要重启SSH服务&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;/etc/init.d/sshd restart  //或者
+service sshd restart 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果还是访问不通，需要进行防火墙配置&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  /etc/init.d/iptables stop   //或者
+  service iptables stop     
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或者在防火墙过滤规则中上增加一条，允许对新增的端口的访问：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;vim /etc/sysconfig/iptables
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+***********
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 2022 -j ACCEPT
+***********
+-A INPUT -j REJECT --reject-with icmp-host-prohibited
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+COMMIT
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;fail2ban配置&#34;&gt;Fail2ban配置&lt;/h2&gt;
+&lt;p&gt;之前尝试使用过DenyHosts，其已经很长时间没有进行维护而且它用的Python2与服务器上部署的Python3有不兼容的现象，弃用。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;%5Bhttps://www.fail2ban.org%5D(https://www.fail2ban.org/)&#34;&gt;Fail2ban&lt;/a&gt;是一款实用软件，可以监视你的系统日志，然后匹配日志的错误信息（正则式匹配）执行相应的屏蔽动作。一般需求的操作并不复杂，修改配置文件即可。&lt;/p&gt;
+&lt;p&gt;安装&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;apt-get install fail2ban&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;打开配置文件&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;vim /etc/fail2ban/jail.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;配置文件翻译如下：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;我并没有在服务器上配置邮件服务，也不需要邮件提醒，主要是修改前12行&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;[DEFAULT]
+# 忽略的IP列表,不受设置限制
+ignoreip = 127.0.0.1/8 
+
+# 被封IP禁止访问的时间，单位是秒
+bantime = 60000
+
+# 检测时间，在此时间内超过规定的次数会激活fail2ban，单位是秒 
+findtime = 300
+
+# 允许错误登录的最大次数
+maxretry = 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;需要将Fail2ban设置为开机自启动&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 设置fail2ban开机启动
+systemctl enable fail2ban
+systemctl start fail2ban
+
+# 启动与重启fail2ban
+service fail2ban start
+service fail2ban restart
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;日志查看功能&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# 查看最近100条记录 ps.可以配合grep筛选已Ban列表
+tail -100 /var/log/fail2ban.log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;查看SSH服务监护状态，能看到当前被禁IP&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;fail2ban-client status sshd
+&lt;/code&gt;&lt;/pre&gt;
+">服务器被SSH暴力破解解决方案</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/apps-recommended/"" data-c="
+          &lt;p&gt;下面的文章列出了电脑中必备的一些软件，标注了其官网或者可靠的下载方式&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;下载方式主要分为三种（按喜好程度排序）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Scoop/Chocolatey下载&lt;/li&gt;
+&lt;li&gt;微软应用商店UWP下载&lt;/li&gt;
+&lt;li&gt;传统官网x64/x86下载&lt;/li&gt;
+&lt;li&gt;和谐版下载&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;scoop与chocolatey&#34;&gt;Scoop与Chocolatey&lt;/h2&gt;
+&lt;p&gt;Scoop与Chocolatey是我最近发现的用于Windows的包管理工具，相当于Ubuntu中的apt-get；Chocolatey是更早的包管理工具，商业软件。两者的区别是前者将软件安装在用户文件夹下，后者将软件安装在Program Files文件夹中。&lt;em&gt;Chocolatey安装软件不会生成快捷方式&lt;/em&gt;（均可更改，复杂）&lt;/p&gt;
+&lt;p&gt;**目前遵循Scoop优于Chocolatey安装的原则，特殊软件除外 **&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;打开 PowerShell&lt;/p&gt;
+&lt;p&gt;在 PowerShell 中输入下面内容，保证允许本地脚本的执行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;set-executionpolicy remotesigned -scope currentuser&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后执行下面的命令安装 Scoop：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;静待脚本执行完成就可以了，安装成功后，让我们尝试一下： &lt;code&gt;scoop help&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;搜索软件使用：&lt;code&gt;scoop search *&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装软件使用：&lt;code&gt;scoop install *&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;同理安装Chocolatey&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://Chocolatey.org/install.ps1&#39;))&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;一键安装命令&#34;&gt;一键安装命令&lt;/h3&gt;
+&lt;p&gt;原则：Scoop中有就不使用Chocolatey&lt;br&gt;
+首先开启全局翻墙，然后使用Scoop安装7zip, git与sudo&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;scoop install 7zip git sudo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后安装extra仓库&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;scoop bucket add extras
+scoop bucket add Ash258 &#39;https://github.com/Ash258/scoop-Ash258.git&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最后执行一键命令&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;# 已经经过测试可用的各个软件，有些软件可用scoop，但不适合
+scoop install 7zip anydesk aria2 aria-ng-gui captura dismplusplus freedownloadmanager geekuninstaller git goldendict innounp mobaxterm pandownload putty pycharm rufus screentogif sudo teamviewer trafficmonitor typora vncviewer vscode xmind8
+sudo choco install --yes raidrive fluent-terminal sandboxie logitechoptions vmwareworkstation qtranslate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最后执行一键命令&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;# 已经经过测试可用的各个软件，有些软件可用scoop，但不适合
+scoop install 7zip anydesk aria2 aria-ng-gui captura dismplusplus freedownloadmanager geekuninstaller git goldendict innounp mobaxterm pandownload putty pycharm rufus screentogif sudo teamviewer trafficmonitor typora vncviewer vscode xmind8
+sudo choco install --yes raidrive fluent-terminal sandboxie logitechoptions vmwareworkstation qtranslate
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;常用软件&#34;&gt;常用软件&lt;/h2&gt;
+&lt;h3 id=&#34;网上冲浪&#34;&gt;网上冲浪&lt;/h3&gt;
+&lt;h4 id=&#34;google-chrome&#34;&gt;&lt;a href=&#34;https://www.google.com/chrome/&#34;&gt;Google Chrome&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;最好用的浏览器，没有之一，配合谷歌账户使用效果更佳，所用插件直接登陆账号后恢复&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9162694&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9162694&#34;&gt; Scoop/Chocolatey (googlechrome)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8713965&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8713965&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;v2ray&#34;&gt;&lt;a href=&#34;https://github.com/2dust/v2rayN/releases&#34;&gt;V2ray&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Internet访问工具，墙不平何以平天下&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3901420&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3901420&#34;&gt; Scoop (v2rayn)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6936419&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6936419&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;解压缩&#34;&gt;解压缩&lt;/h3&gt;
+&lt;h4 id=&#34;bandizip&#34;&gt;&lt;a href=&#34;https://cn.bandisoft.com/bandizip/&#34;&gt;Bandizip&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;解压缩软件，界面美观无广告（7.x 版本之前免费，官网有 &lt;a href=&#34;https://cn.bandisoft.com/bandizip/old/6/&#34;&gt;老版本&lt;/a&gt; 链接）&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5482540&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5482540&#34;&gt; Scoop/Chocolatey (bandizip)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1798068&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1798068&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;7z&#34;&gt;&lt;a href=&#34;https://www.7-zip.org/&#34;&gt;7z&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;开源的解压缩软件，功能很强但是丑，可以进行简单的美化，详见少数派这篇文章：&lt;a href=&#34;https://sspai.com/post/58130&#34;&gt;如何让简陋的 7-Zip 的界面现代化&lt;/a&gt; 。&lt;/p&gt;
+&lt;h3 id=&#34;即时通讯&#34;&gt;即时通讯&lt;/h3&gt;
+&lt;h4 id=&#34;tim&#34;&gt;&lt;a href=&#34;https://office.qq.com/index.html&#34;&gt;Tim&lt;/a&gt; / &lt;a href=&#34;https://weixin.qq.com/&#34;&gt;微信&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;桌面端TIM简洁好用，没有QQ的“丰富”的内容与广告，适合专注通信与协作。UWP版微信已经停更，还是使用官网下载的版本吧。&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8291054&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8291054&#34;&gt; 微软应用商店UWP安装&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-313649&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-313649&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;telegram&#34;&gt;Telegram&lt;/h4&gt;
+&lt;p&gt;被墙的即时通讯软件，安卓端与桌面端的开发都很规范，干翻 QQ 微信之流。&lt;/p&gt;
+&lt;h3 id=&#34;办公写作&#34;&gt;办公写作&lt;/h3&gt;
+&lt;h4 id=&#34;typora&#34;&gt;&lt;a href=&#34;https://typora.io/&#34;&gt;Typora&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Markdown写作软件，本文由Typora完成，配合Pandoc可进行不同格式的导出&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1210879&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1210879&#34;&gt; Scoop/Chocolatey (typora)  （测试发现装不上）&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1784417&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1784417&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;gridea&#34;&gt;&lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Gridea 是一个静态博客写作客户端，帮助你更容易地构建并管理博客或任何静态站点。目前我的 &lt;a href=&#34;https://193824.xyz&#34;&gt;博客&lt;/a&gt; 就是使用 Gridea 搭建在 GitHub Pages 上&lt;/p&gt;
+&lt;h4 id=&#34;sumatra-pdf&#34;&gt;&lt;a href=&#34;https://www.sumatrapdfreader.org/free-pdf-reader.html&#34;&gt;Sumatra PDF&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;极简PDF阅读器，有效阅读面积大，没有批注等功能&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2806531&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2806531&#34;&gt; Scoop/Chocolatey (sumatrapdf)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7786495&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7786495&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;microsoft-365&#34;&gt;Microsoft 365&lt;/h4&gt;
+&lt;p&gt;Office 订阅制产品，原名 Office 365，功能强大，可使用 &lt;a href=&#34;https://otp.landian.vip/zh-cn/&#34;&gt;Office Tool Plus&lt;/a&gt; 进行自定义组件安装，日常仅需 Word，Excel，PowerPoint 三个组件&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8721665&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8721665&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8490805&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8490805&#34;&gt; 和谐版&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;microsoft-to-do&#34;&gt;Microsoft To Do&lt;/h4&gt;
+&lt;p&gt;Todo软件，可与安卓端联动&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2038071&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2038071&#34;&gt; 微软应用商店&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;yomail&#34;&gt;Yomail&lt;/h4&gt;
+&lt;p&gt;邮件应用，已经凉了，但是还能用&lt;/p&gt;
+&lt;h4 id=&#34;网易邮箱大师&#34;&gt;&lt;a href=&#34;https://mail.163.com/dashi/&#34;&gt;网易邮箱大师&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;目前在用，界面好看，还算稳定&lt;/p&gt;
+&lt;h4 id=&#34;goldendict&#34;&gt;&lt;a href=&#34;https://sourceforge.net/projects/goldendict/&#34;&gt;GoldenDict&lt;/a&gt; / &lt;a href=&#34;https://quest-app.appspot.com/&#34;&gt;QTranslate&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;开源的词典软件，可屏幕取词，后者更加轻量，但不支持字典&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1787329&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1787329&#34;&gt; Scoop/Chocolatey (goldendict)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5664680&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5664680&#34;&gt; Chocolatey (qtranslate)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4013796&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4013796&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;图像视频&#34;&gt;图像视频&lt;/h3&gt;
+&lt;h4 id=&#34;potplayer&#34;&gt;&lt;a href=&#34;https://potplayer.daum.net/&#34;&gt;Potplayer&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;功能强大，皮肤自定义，在用Zune皮肤&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3787804&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3787804&#34;&gt; Scoop/Chocolatey (potplayer)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2906587&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2906587&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;screentogif&#34;&gt;&lt;a href=&#34;https://www.screentogif.com/?l=zh_cn&#34;&gt;ScreenToGif&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;体积极小的录屏转Gif的软件，有安装版和绿色版，开源&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9420144&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9420144&#34;&gt; Scoop/Chocolatey (screentogif)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8331844&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8331844&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;captura&#34;&gt;&lt;a href=&#34;https://github.com/MathewSachin/Captura&#34;&gt;Captura&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;专业的录屏软件，可调整帧率与质量&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8937434&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8937434&#34;&gt; Scoop/Chocolatey (captura)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6075483&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6075483&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;honeyview&#34;&gt;&lt;a href=&#34;https://www.bandisoft.com/honeyview/&#34;&gt;Honeyview&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;专业的看图软件，可为PSD文件生成缩略图，查看psd图像&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2191567&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2191567&#34;&gt; Scoop/Chocolatey (honeyview)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1158570&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1158570&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;adobe全家桶&#34;&gt;Adobe全家桶&lt;/h4&gt;
+&lt;p&gt;Photoshop，Premier Pro，Acrobat DC等&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-348200&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-348200&#34;&gt; 和谐版&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;效率工具&#34;&gt;效率工具&lt;/h3&gt;
+&lt;h4 id=&#34;listary&#34;&gt;&lt;a href=&#34;https://www.listary.com/&#34;&gt;Listary&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;文件搜索神器，也许逐渐会被windows搜索替代，目前的开发版开始适配高分屏&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9825540&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9825540&#34;&gt; Scoop/Chocolatey (listary)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9749323&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9749323&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7116704&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7116704&#34;&gt; Listary Pro有和谐版&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;snipaste&#34;&gt;&lt;a href=&#34;https://zh.snipaste.com/&#34;&gt;Snipaste&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;方便快捷的截图贴图软件，可自定义截图快捷键，开源&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2880259&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2880259&#34;&gt; 微软应用商店UWP安装，实际上是转制版本&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2978323&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2978323&#34;&gt; Scoop&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5877519&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5877519&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;trafficmonitor&#34;&gt;&lt;a href=&#34;https://github.com/zhongyang219/TrafficMonitor&#34;&gt;TrafficMonitor&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;网速监控悬浮窗软件，内嵌到任务栏，开源&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6690321&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6690321&#34;&gt; Scoop (trafficmonitor)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1550095&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1550095&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;calibre&#34;&gt;&lt;a href=&#34;https://calibre-ebook.com/&#34;&gt;Calibre&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Kindle配套的电子书管理软件，泡面警告&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8755982&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8755982&#34;&gt; Scoop/Chocolatey (calibre)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7562658&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7562658&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;文件同步&#34;&gt;文件同步&lt;/h3&gt;
+&lt;h4 id=&#34;坚果云&#34;&gt;&lt;a href=&#34;https://www.jianguoyun.com/d/home#/&#34;&gt;坚果云&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;科研笔记以及文档备份等用途&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9965417&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9965417&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;onedrive&#34;&gt;OneDrive&lt;/h4&gt;
+&lt;p&gt;Windows 系统自带，开通 Microsoft 365 之后空间扩展至 1T，与 Office 系列软件完美联动。不开会员也可以通过万能的某宝将空间扩展至 15G&lt;/p&gt;
+&lt;h3 id=&#34;远程访问&#34;&gt;远程访问&lt;/h3&gt;
+&lt;h4 id=&#34;teamviewer&#34;&gt;&lt;a href=&#34;https://www.teamviewer.cn/cn/&#34;&gt;TeamViewer&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;远程访问工具，TeamViewer老牌，被国内垃圾代理商代理，现已难用至极&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5923542&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5923542&#34;&gt; Scoop/Chocolatey (teamviewer anydesk)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7955294&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7955294&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;anydesk&#34;&gt;&lt;a href=&#34;https://anydesk.com/zhs&#34;&gt;AnyDesk&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;开源的远程访问软件，使用体验不佳&lt;/p&gt;
+&lt;h4 id=&#34;向日葵&#34;&gt;&lt;a href=&#34;https://sunlogin.oray.com/&#34;&gt;向日葵&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;国产远程软件，免费用户有 1M 带宽，可以用&lt;/p&gt;
+&lt;h4 id=&#34;todesk&#34;&gt;&lt;a href=&#34;https://www.todesk.com/&#34;&gt;ToDesk&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;国产远程软件，疫情期间的优秀产品，目前体验很棒，全平台支持&lt;/p&gt;
+&lt;h3 id=&#34;系统工具&#34;&gt;系统工具&lt;/h3&gt;
+&lt;h4 id=&#34;notepad2-mod&#34;&gt;&lt;a href=&#34;https://xhmikosr.github.io/notepad2-mod/&#34;&gt;Notepad2-mod&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;使用一个脚本可替代系统记事本，支持代码高亮&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2203345&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2203345&#34;&gt; Scoop/Chocolatey (notepad2-mod)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-355836&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-355836&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;
+&lt;summary&gt;替换系统记事本.bat&lt;/summary&gt;
+&lt;pre&gt;&lt;code&gt;
+@ECHO OFF
+PUSHD %~DP0
+taskkill /f /im notepad*&gt;NUL 2&gt;NUL
+Md &#34;%WinDir%\System32\test_permissions&#34; 2&gt;NUL||(Echo 请使用右键管理员身份运行&amp;&amp;Pause &gt;NUL&amp;&amp;Exit)
+Rd &#34;%WinDir%\System32\test_permissions&#34; 2&gt;NUL
+SetLocal EnableDelayedExpansion
+if not exist &#34;%WinDir%\SysWOW64&#34; reg add &#34;HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe&#34; /v &#34;Debugger&#34; /t REG_SZ /d &#34;\&#34;%~dp0Notepad2.exe\&#34; /z&#34; /f
+if exist &#34;%WinDir%\SysWOW64&#34; reg add &#34;HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe&#34; /v &#34;Debugger&#34; /t REG_SZ /d &#34;\&#34;%~dp0Notepad2_x64.exe\&#34; /z&#34; /f
+exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt;恢复系统记事本.bat&lt;/summary&gt;
+&lt;pre&gt;&lt;code&gt;
+@ECHO OFF
+PUSHD %~DP0
+taskkill /f /im notepad*&gt;NUL 2&gt;NUL
+Md &#34;%WinDir%\System32\test_permissions&#34; 2&gt;NUL||(Echo 请使用右键管理员身份运行&amp;&amp;Pause &gt;NUL&amp;&amp;Exit)
+Rd &#34;%WinDir%\System32\test_permissions&#34; 2&gt;NUL
+SetLocal EnableDelayedExpansion
+reg delete &#34;HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe&#34; /f
+reg delete &#34;HKLM\Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\notepad.exe&#34; /f
+exit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/details&gt;
+&lt;h4 id=&#34;raidrive&#34;&gt;&lt;a href=&#34;https://www.raidrive.com/&#34;&gt;RaiDrive&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;将网盘映射到资源管理器的软件，开源&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7265512&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7265512&#34;&gt; Chocolatey (raidrive)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6695553&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6695553&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;fluent-terminal&#34;&gt;&lt;a href=&#34;https://github.com/felixse/FluentTerminal&#34;&gt;Fluent Terminal&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;好看的第三方命令行，颜值即正义，再用主题为 &lt;a href=&#34;https://draculatheme.com/iterm/&#34;&gt;Dracula&lt;/a&gt;&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4418688&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4418688&#34;&gt; Chocolatey (fluent-terminal)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8226596&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8226596&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;sandboxie&#34;&gt;&lt;a href=&#34;https://www.sandboxie.com/&#34;&gt;Sandboxie&lt;/a&gt; 沙盒&lt;/h4&gt;
+&lt;p&gt;沙盒软件，用于安装百度云那种软件&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4399429&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4399429&#34;&gt; Chocolatey (sandboxie)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1138915&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1138915&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;rufus&#34;&gt;&lt;a href=&#34;https://rufus.ie/&#34;&gt;Rufus&lt;/a&gt; / &lt;a href=&#34;https://www.ultraiso.com/&#34;&gt;UltraISO&lt;/a&gt; 系统盘&lt;/h4&gt;
+&lt;p&gt;启动盘制作工具，Rufus 更加先进，UltraISO 为收费软件，但是可以无限试用&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-862892&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-862892&#34;&gt; Scoop （rufus）&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7400964&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7400964&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;智能任务栏&#34;&gt;智能任务栏&lt;/h4&gt;
+&lt;p&gt;比windows自带好用的任务栏隐藏策略&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-9254168&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-9254168&#34;&gt; 微软应用商店&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;hashtab&#34;&gt;HashTab&lt;/h4&gt;
+&lt;p&gt;哈希值查看软件，集成在‘属性’中&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6863608&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6863608&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;geekuninstall-卸载&#34;&gt;GeekUninstall 卸载&lt;/h4&gt;
+&lt;p&gt;卸载软件，可附带删除残留文件与注册表&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4533673&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4533673&#34;&gt; Scoop/Chocolatey (geekuninstall)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1824641&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1824641&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;vmware-虚拟机&#34;&gt;VMware 虚拟机&lt;/h4&gt;
+&lt;p&gt;虚拟机，直接使用密钥可和谐&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-6141022&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-6141022&#34;&gt; Chocolatey (vmwareworkstation)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7915524&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7915524&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;qttabbar&#34;&gt;&lt;a href=&#34;http://qttabbar.wikidot.com/&#34;&gt;Qttabbar&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;将资源管理器标签化的工具，资源管理器该有的样子&lt;/p&gt;
+&lt;h4 id=&#34;pasteex&#34;&gt;&lt;a href=&#34;https://github.com/huiyadanli/PasteEx&#34;&gt;PasteEx&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;将剪切板内容粘贴为txt的工具，集成到右键菜单&lt;/p&gt;
+&lt;h4 id=&#34;logitech-options&#34;&gt;&lt;a href=&#34;https://support.logi.com/hc/zh-cn/articles/360024361233&#34;&gt;Logitech Options&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;罗技键鼠设置软件，可自定义快捷键功能&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5655358&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5655358&#34;&gt; Chocolatey (logitechoptions)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-402222&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-402222&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;下载&#34;&gt;下载&lt;/h3&gt;
+&lt;h4 id=&#34;free-download-manager&#34;&gt;Free Download Manager&lt;/h4&gt;
+&lt;p&gt;开源的下载工具，可下载种子与磁力链接，毕竟 IDM 收费而且颜值即正义&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-3204430&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-3204430&#34;&gt; Scoop/Chocolatey (freedownloadmanager)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7289247&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7289247&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ariang-gui&#34;&gt;&lt;a href=&#34;https://github.com/Xmader/aria-ng-gui&#34;&gt;AriaNG-GUI&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;拥有 GUI 的 aira2 下载工具，实测速度优于其他软件&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4415989&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4415989&#34;&gt; Scoop (aria-ng-gui)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-655016&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-655016&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;影音娱乐&#34;&gt;影音娱乐&lt;/h3&gt;
+&lt;h4 id=&#34;bilibili&#34;&gt;&lt;a href=&#34;bilibili.com&#34;&gt;Bilibili&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;233333&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-751854&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-751854&#34;&gt; 微软应用商店&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;网易云音乐&#34;&gt;网易云音乐&lt;/h4&gt;
+&lt;p&gt;随缘听歌，UWP好久没更新了&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1656308&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1656308&#34;&gt; 微软应用商店&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-2949291&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-2949291&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;我爱科研&#34;&gt;我爱科研&lt;/h3&gt;
+&lt;h4 id=&#34;pycharm&#34;&gt;&lt;a href=&#34;https://www.jetbrains.com/pycharm/download/&#34;&gt;Pycharm&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Python IDE，社区版免费，启动慢是用为联网验证&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-365487&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-365487&#34;&gt; Scoop/Chocolatey (pycharm/pycharm-community)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5283199&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5283199&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;visual-studio-codevs-code&#34;&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;Visual Studio Code(VS Code)&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Visual Studio Code是由巨硬开发的，开源的全平台代码编辑器。Scoop安装的VSCode自带了右键的注册表文件，需要手动执行。&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7720562&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7720562&#34;&gt; Scoop/Chocolatey (vscode)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-727848&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-727848&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;matlab&#34;&gt;MATLAB&lt;/h4&gt;
+&lt;p&gt;工程用，功能强大，装一下十几个G就没了&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-570478&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-570478&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mitk&#34;&gt;&lt;a href=&#34;http://www.mitk.org/&#34;&gt;MITK&lt;/a&gt; / &lt;a href=&#34;https://github.com/DlutMedimgGroup/AnatomySketch-Software&#34;&gt;AnatomySketch&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;医学图像相关软件&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7755492&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7755492&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mathtype-公式编辑器&#34;&gt;MathType 公式编辑器&lt;/h4&gt;
+&lt;p&gt;公式编辑器，没法用了，可以改用 $ \LaTeX$ ，有一个好用的在线编辑器 &lt;a href=&#34;https://latexlive.com/##&#34;&gt;LaTeX公式编辑器&lt;/a&gt;&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-4545381&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-4545381&#34;&gt; 和谐版&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mobaxtermputty&#34;&gt;MobaXterm/Putty&lt;/h4&gt;
+&lt;p&gt;SHH工具，用于访问服务器&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1375553&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1375553&#34;&gt; Scoop/Chocolatey (mobaxterm putty)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1818888&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1818888&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;vncviwer&#34;&gt;VncViwer&lt;/h4&gt;
+&lt;p&gt;用于图形化操作课题组服务器&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-5423159&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-5423159&#34;&gt; Scoop/Chocolatey (vncviwer/vnc-viwer)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-7616532&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-7616532&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;zotero&#34;&gt;Zotero&lt;/h4&gt;
+&lt;p&gt;文献管理工具，开源，使用坚果云同步&lt;/p&gt;
+&lt;ul class=&#34;contains-task-list&#34;&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-8633932&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-8633932&#34;&gt; Scoop/Chocolatey (zotero)&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&#34;task-list-item&#34;&gt;&lt;input class=&#34;task-list-item-checkbox&#34; disabled=&#34;&#34; type=&#34;checkbox&#34; id=&#34;task-item-1958477&#34;&gt;&lt;label class=&#34;task-list-item-label&#34; for=&#34;task-item-1958477&#34;&gt; x64&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;其他&#34;&gt;其他&lt;/h3&gt;
+&lt;p&gt;其他需要下载使用的非软件型辅助工具&lt;/p&gt;
+&lt;h4 id=&#34;scoop下载来的git配置&#34;&gt;Scoop下载来的git配置&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;右键菜单里添加 &lt;code&gt;git bash here&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;新建注册表文件 &lt;code&gt;git bash here.reg&lt;/code&gt;, 内容如下（路径按需修改）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\directory\background\shell\Git Bash Here]
+&amp;quot;icon&amp;quot;=&amp;quot;C:\\Users\\用户名\\scoop\\apps\\git\\current\\mingw64\\share\\git\\git-for-windows.ico&amp;quot;
+
+[HKEY_CLASSES_ROOT\directory\background\shell\Git Bash Here\command]
+@=&amp;quot;C:\\Users\\用户名\\scoop\\apps\\git\\current\\git-bash.exe&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;更纱黑体&#34;&gt;&lt;a href=&#34;https://github.com/be5invis/Sarasa-Gothic/releases&#34;&gt;更纱黑体&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;基于思源黑体的开源中文字体，有等距模式，适合终端，腾讯镜像&lt;a href=&#34;https://dev.tencent.com/u/gegb/p/Sarasa-Gothic/git&#34;&gt;Sarasa-Gothic&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;nomeiryoui&#34;&gt;&lt;a href=&#34;https://github.com/Tatsu-syo/noMeiryoUI&#34;&gt;noMeiryoUI&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;替换系统字体显示的小工具，拯救768P屏幕&lt;/p&gt;
+&lt;h4 id=&#34;zune皮肤&#34;&gt;Zune皮肤&lt;/h4&gt;
+&lt;p&gt;Potplayer皮肤，简洁美观&lt;/p&gt;
+&lt;h4 id=&#34;tcping&#34;&gt;&lt;a href=&#34;https://elifulkerson.com/projects/tcping.php&#34;&gt;Tcping&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;测试海外服务器是否被TCP阻断的工具&lt;/p&gt;
+&lt;p&gt;下载好tcping工具后，将可执行程序（tcping.exe或者tcping64.exe）拷贝至C:\Windows\System32目录下，这个目录是所有工具的默认路径，放在这里就不需要指定工具所在路径了。&lt;/p&gt;
+">装机用所有软件合集</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://tianyang-ty.github.io/post/hello-gridea/"" data-c="
+          &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
+✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/getgridea/gridea&#34;&gt;Github&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://fehey.com/&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;特性&#34;&gt;特性👇&lt;/h2&gt;
+&lt;p&gt;📝  你可以使用最酷的 &lt;strong&gt;Markdown&lt;/strong&gt; 语法，进行快速创作&lt;/p&gt;
+&lt;p&gt;🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片&lt;/p&gt;
+&lt;p&gt;🏷️  你可以对文章进行标签分组&lt;/p&gt;
+&lt;p&gt;📋  你可以自定义菜单，甚至可以创建外部链接菜单&lt;/p&gt;
+&lt;p&gt;💻  你可以在 &lt;strong&gt;Windows&lt;/strong&gt;，&lt;strong&gt;MacOS&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 设备上使用此客户端&lt;/p&gt;
+&lt;p&gt;🌎  你可以使用 &lt;strong&gt;𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌&lt;/strong&gt; 或 &lt;strong&gt;Coding Pages&lt;/strong&gt; 向世界展示，未来将支持更多平台&lt;/p&gt;
+&lt;p&gt;💬  你可以进行简单的配置，接入 &lt;a href=&#34;https://github.com/gitalk/gitalk&#34;&gt;Gitalk&lt;/a&gt; 或 &lt;a href=&#34;https://github.com/SukkaW/DisqusJS&#34;&gt;DisqusJS&lt;/a&gt; 评论系统&lt;/p&gt;
+&lt;p&gt;🇬🇧  你可以使用&lt;strong&gt;中文简体&lt;/strong&gt;或&lt;strong&gt;英语&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力&lt;/p&gt;
+&lt;p&gt;🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步&lt;/p&gt;
+&lt;p&gt;🌱 当然 &lt;strong&gt;Gridea&lt;/strong&gt; 还很年轻，有很多不足，但请相信，它会不停向前 🏃&lt;/p&gt;
+&lt;p&gt;未来，它一定会成为你离不开的伙伴&lt;/p&gt;
+&lt;p&gt;尽情发挥你的才华吧！&lt;/p&gt;
+&lt;p&gt;😘 Enjoy~&lt;/p&gt;
+">Hello Gridea</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
 </script>
 
-    </div>
-</div>
-</body>
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="https://cdn.jsdelivr.net/gh/TianYang-TY/TianYang-TY.github.io@master/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
+
+
+
+
+
+
 </html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tianyang-ty.github.io</id>
     <title>Yang&apos;s blog</title>
-    <updated>2020-12-02T05:57:48.422Z</updated>
+    <updated>2020-12-02T05:59:22.079Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tianyang-ty.github.io"/>
     <link rel="self" href="https://tianyang-ty.github.io/atom.xml"/>
@@ -10,13 +10,6 @@
     <logo>https://tianyang-ty.github.io/images/avatar.png</logo>
     <icon>https://tianyang-ty.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Yang&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[测试]]></title>
-        <id>https://tianyang-ty.github.io/post/ce-shi/</id>
-        <link href="https://tianyang-ty.github.io/post/ce-shi/">
-        </link>
-        <updated>2020-12-02T05:28:23.000Z</updated>
-    </entry>
     <entry>
         <title type="html"><![CDATA[基于 VSCode 的 Python 开发环境]]></title>
         <id>https://tianyang-ty.github.io/post/vscode-python-dev/</id>

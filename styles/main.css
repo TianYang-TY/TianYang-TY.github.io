@@ -2119,9 +2119,9 @@ body {
       background-color:  !important;
     }
       .nav-item a {
-        color:  #555;
+        color:  #24211c;
       }.nav-item a:hover {
-        color: #222;
+        color: #24211c;
       }.nav-item-active {
       background: #f9f9f9fe;
     }
@@ -2163,16 +2163,16 @@ body {
       color: #fc7475;
       border-bottom-color: #fc7475;
     }.bg-color {
-      background-color: #fffffffe;
+      background-color: #fefefefe;
     }
     .site-meta {
-      background: #4d4d4d !important;
+      background: #24211c !important;
     }
     .head-top-line {
-      background: #4d4d4d;
+      background: #24211c;
     }
     .brand {
-      background: #4d4d4dfe;
+      background: #24211cfe;
     }
     .main-title, .brand {
       color: #f1f3f5 !important;

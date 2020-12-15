@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://tianyang-ty.github.io</id>
+    <id>https://yangt.me</id>
     <title>Yang&apos;s blog</title>
-    <updated>2020-12-11T11:02:08.004Z</updated>
+    <updated>2020-12-15T10:14:56.639Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://tianyang-ty.github.io"/>
-    <link rel="self" href="https://tianyang-ty.github.io/atom.xml"/>
+    <link rel="alternate" href="https://yangt.me"/>
+    <link rel="self" href="https://yangt.me/atom.xml"/>
     <subtitle>苟利国家生死以，岂因祸福避趋之🕶</subtitle>
-    <logo>https://tianyang-ty.github.io/images/avatar.png</logo>
-    <icon>https://tianyang-ty.github.io/favicon.ico</icon>
+    <logo>https://yangt.me/images/avatar.png</logo>
+    <icon>https://yangt.me/favicon.ico</icon>
     <rights>All rights reserved 2020, Yang&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[基于 VSCode 的 Python 开发环境]]></title>
-        <id>https://tianyang-ty.github.io/post/vscode-python-dev/</id>
-        <link href="https://tianyang-ty.github.io/post/vscode-python-dev/">
+        <id>https://yangt.me/post/vscode-python-dev/</id>
+        <link href="https://yangt.me/post/vscode-python-dev/">
         </link>
         <updated>2020-11-24T09:18:13.000Z</updated>
         <summary type="html"><![CDATA[<p>本文记录电脑中基于 VSCode 进行 Python 开发环境的流程。初上手 Python 时，Pycharm 是一个非常便利的 IDE，随着使用频率的增加，愈发被 Pycharm 超慢的启动速度困扰，于是转入 VSCode。VSCode 定位是一个文本编辑器，并不是跟 Pycharm 一样的 IDE，得益于丰富的插件支持，可以自定义出一套满足自己需求的开发环境。</p>
@@ -23,8 +23,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Freesurfer操作文档]]></title>
-        <id>https://tianyang-ty.github.io/post/freesurfer-use/</id>
-        <link href="https://tianyang-ty.github.io/post/freesurfer-use/">
+        <id>https://yangt.me/post/freesurfer-use/</id>
+        <link href="https://yangt.me/post/freesurfer-use/">
         </link>
         <updated>2020-05-07T14:58:25.000Z</updated>
         <summary type="html"><![CDATA[<p>本文档的操作流程基于 Ububtu 18.04LTS 以及 Freesurfer 6.0，安装过程记录在另一篇文档 <em><a href="http://193824.xyz/post/zai-ubuntu1804lts-zhong-an-zhuang-freesurfer/">在 Ubuntu18.04LTS 中安装 FreeSurfer</a></em> 中。本文档操作全部在终端中进行，Freesurfer 的 GUI 仅用作查看操作结果。</p>
@@ -34,8 +34,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[在Ubuntu18.04LTS中安装FreeSurfer]]></title>
-        <id>https://tianyang-ty.github.io/post/install-freesurfer-on-ubuntu1804lts/</id>
-        <link href="https://tianyang-ty.github.io/post/install-freesurfer-on-ubuntu1804lts/">
+        <id>https://yangt.me/post/install-freesurfer-on-ubuntu1804lts/</id>
+        <link href="https://yangt.me/post/install-freesurfer-on-ubuntu1804lts/">
         </link>
         <updated>2020-02-18T14:55:41.000Z</updated>
         <summary type="html"><![CDATA[<p>本文档主要参考了<a href="https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall">FreeSurfer官方教程</a>以及CSDN上的一篇文章<a href="https://blog.csdn.net/qq_32696375/article/details/84024326">Ubuntu 18.04安装FreeSurfer软件</a>。由于系统与软件的更新迭代，必须进行一些额外的操作才能够成功安装。</p>
@@ -45,8 +45,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[WIFI断连自动连接脚本]]></title>
-        <id>https://tianyang-ty.github.io/post/reconnect-wifi/</id>
-        <link href="https://tianyang-ty.github.io/post/reconnect-wifi/">
+        <id>https://yangt.me/post/reconnect-wifi/</id>
+        <link href="https://yangt.me/post/reconnect-wifi/">
         </link>
         <updated>2020-02-10T14:43:22.000Z</updated>
         <summary type="html"><![CDATA[<p>疫情期间需要远程访问电脑进行工作，实验室电脑一旦出现网络问题就只能求助老师到现场重连WIFI。为了监测网络状态，并在断网时能够及时自动重新连回实验室路由器，编写了以下脚本。</p>
@@ -56,8 +56,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[在vps上搭建Jupyter环境]]></title>
-        <id>https://tianyang-ty.github.io/post/jupyter-env/</id>
-        <link href="https://tianyang-ty.github.io/post/jupyter-env/">
+        <id>https://yangt.me/post/jupyter-env/</id>
+        <link href="https://yangt.me/post/jupyter-env/">
         </link>
         <updated>2019-11-12T14:37:21.000Z</updated>
         <summary type="html"><![CDATA[<p>之前在吴恩达的深度学习课上接触了Jupyter，一直在本地使用，每次想启动都得打开PowerShell输入jupyter notebook的命令，启动后的目录下还包含路径下其他文件，很是不够方便。</p>
@@ -69,8 +69,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Windows系统下TensorFlow-GPU环境搭建]]></title>
-        <id>https://tianyang-ty.github.io/post/tensorflow-gpu-env-under-windows/</id>
-        <link href="https://tianyang-ty.github.io/post/tensorflow-gpu-env-under-windows/">
+        <id>https://yangt.me/post/tensorflow-gpu-env-under-windows/</id>
+        <link href="https://yangt.me/post/tensorflow-gpu-env-under-windows/">
         </link>
         <updated>2019-09-28T14:42:03.000Z</updated>
         <summary type="html"><![CDATA[<p>以 Windows 7 SP1 专业版系统为例，进行 Windows 下 TensorFlow GPU 环境的配置，尽可能复现课题组 Ubuntu 服务器中的版本。</p>
@@ -80,8 +80,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[服务器被SSH暴力破解解决方案]]></title>
-        <id>https://tianyang-ty.github.io/post/protect-server-under-ssh-cracking/</id>
-        <link href="https://tianyang-ty.github.io/post/protect-server-under-ssh-cracking/">
+        <id>https://yangt.me/post/protect-server-under-ssh-cracking/</id>
+        <link href="https://yangt.me/post/protect-server-under-ssh-cracking/">
         </link>
         <updated>2019-07-07T14:40:43.000Z</updated>
         <summary type="html"><![CDATA[<p>服务器端使用Debian 9×64系统，发现大量不存在的用户名登陆失败记录，于是使用Fail2ban进行IP封禁。</p>
@@ -91,8 +91,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[装机用所有软件合集]]></title>
-        <id>https://tianyang-ty.github.io/post/apps-recommended/</id>
-        <link href="https://tianyang-ty.github.io/post/apps-recommended/">
+        <id>https://yangt.me/post/apps-recommended/</id>
+        <link href="https://yangt.me/post/apps-recommended/">
         </link>
         <updated>2019-06-16T13:54:39.000Z</updated>
         <summary type="html"><![CDATA[<p>下面的文章列出了电脑中必备的一些软件，标注了其官网或者可靠的下载方式</p>

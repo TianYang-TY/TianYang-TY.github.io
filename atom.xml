@@ -2,14 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yangt.me</id>
     <title>Yang&apos;s blog</title>
-    <updated>2020-12-17T08:33:40.101Z</updated>
+    <updated>2021-01-21T04:45:03.111Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yangt.me"/>
     <link rel="self" href="https://yangt.me/atom.xml"/>
     <subtitle>苟利国家生死以，岂因祸福避趋之🕶</subtitle>
     <logo>https://yangt.me/images/avatar.png</logo>
     <icon>https://yangt.me/favicon.ico</icon>
-    <rights>All rights reserved 2020, Yang&apos;s blog</rights>
+    <rights>All rights reserved 2021, Yang&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[毒瘤软件自救指南]]></title>
+        <id>https://yangt.me/post/fxxk-tencent/</id>
+        <link href="https://yangt.me/post/fxxk-tencent/">
+        </link>
+        <updated>2021-01-21T04:42:13.000Z</updated>
+        <summary type="html"><![CDATA[<p>今日腾讯又双叒叕被曝光偷偷读取用户浏览器历史的丑陋行径（<a href="https://www.v2ex.com/t/745030">V2EX</a>），但是 TIM 和微信又不能弃用，所以搜寻了一些方法来压制这些毒瘤（包括但不限于腾讯全家，百度全家。）</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>今日腾讯又双叒叕被曝光偷偷读取用户浏览器历史的丑陋行径（<a href="https://www.v2ex.com/t/745030">V2EX</a>），但是 TIM 和微信又不能弃用，所以搜寻了一些方法来压制这些毒瘤（包括但不限于腾讯全家，百度全家。）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[基于 VSCode 的 Python 开发环境]]></title>
         <id>https://yangt.me/post/vscode-python-dev/</id>
